@@ -9,6 +9,7 @@ import Steps from "../components/Steps";
 import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import Team from "../components/Team";
+import Contact from "../components/Contact";
 export default function Home() {
   return (
     <div className="app">
@@ -27,6 +28,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Team />
+        <Contact />
       </main>
       <Footer />
     </div>

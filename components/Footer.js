@@ -11,22 +11,20 @@ function Footer() {
       <div className="footer-top">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 footer-contact">
-              <h3>Bikin</h3>
+            <div className="col-lg-4 col-md-6 footer-contact">
+              <h3>Winniesoft</h3>
               <p>
-                A108 Adam Street <br />
-                New York, NY 535022
+                <strong>Address:</strong>
+                Not Yet 😔
                 <br />
-                United States <br />
+                <strong>Phone:</strong> Not Yet 😔
                 <br />
-                <strong>Phone:</strong> +1 5589 55488 55
-                <br />
-                <strong>Email:</strong> info@example.com
+                <strong>Email:</strong> info@winniesoft.com
                 <br />
               </p>
             </div>
 
-            <div className="col-lg-2 col-md-6 footer-links">
+            {/* <div className="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -49,22 +47,22 @@ function Footer() {
                   <a href="#">Privacy policy</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
-            <div className="col-lg-3 col-md-6 footer-links">
+            <div className="col-lg-4 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Web Design</a>
+                  <a href="#">Game Development</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <a href="#">Web Development</a>
                 </li>
-                <li>
+                {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Product Management</a>
+                  <a href="#">Script Bots</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
@@ -73,16 +71,13 @@ function Footer() {
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <a href="#">Graphic Design</a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
             <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
+              <p>Stay in tune with our latest projects.</p>
               <form action="" method="post">
                 <input type="email" name="email" />
                 <input type="submit" value="Subscribe" />
@@ -92,34 +87,51 @@ function Footer() {
         </div>
       </div>
 
-      <div className="container d-md-flex py-4">
+      <div className="container d-md-flex py-4 align-items-center">
         <div className="me-md-auto text-center text-md-start">
           <div className="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>Bikin</span>
+              <span>Winniesoft</span>
             </strong>
             . All Rights Reserved
           </div>
-          <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
         </div>
         <div className="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" className="twitter">
-            <UilTwitter className="bx bxl-twitter"></UilTwitter>
+          <a
+            href="https://twitter.com/WinnieSoftware"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <UilTwitter></UilTwitter>
           </a>
-          <a href="#" className="facebook">
-            <UilInstagramAlt className="bx bxl-facebook"></UilInstagramAlt>
+          <a
+            href="https://www.instagram.com/Winniesoftware/"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <UilInstagramAlt></UilInstagramAlt>
           </a>
-          <a href="#" className="instagram">
-            <UilFacebook className="bx bxl-instagram"></UilFacebook>
+          <a
+            href="https://www.facebook.com/profile.php?id=100083122255613"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <UilFacebook></UilFacebook>
           </a>
-          <a href="#" className="google-plus">
-            <UilGithub className="bx bxl-skype"></UilGithub>
+          <a
+            href="https://github.com/WinnieSoft"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <UilGithub></UilGithub>
           </a>
-          <a href="#" className="linkedin">
-            <UilGooglePlay className="bx bxl-linkedin"></UilGooglePlay>
+          <a
+            href="https://play.google.com/store/apps/dev?id=8459739707142059323&hl=tr&gl=US"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <UilGooglePlay></UilGooglePlay>
           </a>
         </div>
       </div>
