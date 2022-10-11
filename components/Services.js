@@ -10,16 +10,14 @@ function Services() {
         <div className="section-title">
           <h2>Services</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            We are working hard to give you best service. We work with the most
+            up-to-date technologies and best solution partners.
           </p>
         </div>
 
         <div className="row align-items-center justify-content-center">
           <div
-            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            className="col-md-6 col-lg-3 col-12 d-flex align-items-stretch mb-5 mb-lg-0"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -28,17 +26,17 @@ function Services() {
                 <UilPlayCircle />
               </div>
               <h4 className="title">
-                <a href="#portfolio">Lorem Ipsum</a>
+                <a href="#portfolio">Game Development</a>
               </h4>
               <p className="description">
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi
+                We develop games suitable for every platform according to your
+                wishes.
               </p>
             </div>
           </div>
 
           <div
-            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            className="col-md-6 col-lg-3 col-12 d-flex align-items-stretch mb-5 mb-lg-0"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -47,17 +45,16 @@ function Services() {
                 <UilMobileAndroid />
               </div>
               <h4 className="title">
-                <a href="#portfolio">Sed ut perspiciatis</a>
+                <a href="#portfolio">Mobile App Development</a>
               </h4>
               <p className="description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore
+                We develop mobile applications according to your wishes
               </p>
             </div>
           </div>
 
           <div
-            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            className="col-md-6 col-lg-3 col-12 d-flex align-items-stretch mb-5 mb-lg-0"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -66,11 +63,10 @@ function Services() {
                 <UilBrowser />
               </div>
               <h4 className="title">
-                <a href="#portfolio">Magni Dolores</a>
+                <a href="#portfolio">Web Development</a>
               </h4>
               <p className="description">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia
+                We make fast, responsive, dynamic web apps and sites.
               </p>
             </div>
           </div>

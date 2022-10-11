@@ -8,7 +8,6 @@ function Project(props) {
   const project =
     playApps.find(({ name }) => name == props.name) ||
     cloneGames.find(({ name }) => name == props.name);
-  console.log(project);
   return (
     <div>
       <Header />

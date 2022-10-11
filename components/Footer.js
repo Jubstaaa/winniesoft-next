@@ -65,7 +65,7 @@ function Footer() {
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">Mobile Development</a>
+                  <a href="#services">Mobile App Development</a>
                 </li>
                 <li>
                   <i>

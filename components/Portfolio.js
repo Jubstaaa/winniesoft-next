@@ -41,12 +41,10 @@ function Portfolio() {
     <section id="portfolio" className="portfolio">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Portfolio</h2>
+          <h2>Projects</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            You can review the projects we have made, view source codes of
+            public ones, try and play demos.
           </p>
         </div>
 
@@ -64,7 +62,10 @@ function Portfolio() {
 
         <div className="row portfolio-container">
           {result.map((app, i) => (
-            <div key={i} className="col-lg-3 col-6  portfolio-item filter-app">
+            <div
+              key={i}
+              className="col-lg-2 col-md-4 col-6  portfolio-item filter-app"
+            >
               <div className="portfolio-wrap">
                 <img
                   src={app.product_info.thumbnail.replace("s64", "s512")}

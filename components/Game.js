@@ -15,8 +15,7 @@ function Game({ name }) {
       style={{
         maxHeight: "100%",
         maxWidth: "100%",
-        // height: "100%",
-        // width: "auto",
+        width: "100%",
       }}
     />
   );

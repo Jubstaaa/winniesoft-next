@@ -37,8 +37,7 @@ h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+
   right: 15px;
   bottom: 15px;
   z-index: 996;
@@ -310,7 +309,7 @@ h6 {
 }
 
 .navbar-mobile {
-  position: fixed;
+  position: fixed !important;
   overflow: hidden;
   top: 0;
   right: 0;
@@ -400,6 +399,9 @@ h6 {
   width: 100%;
   height: 100vh;
   background: white;
+  background-image: url("/assets/img/ani-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-bottom: 2px solid white;
   text-align: center;
 }
@@ -524,7 +526,7 @@ section {
 }
 
 .about .content {
-  padding: 30px 30px 30px 0;
+  padding: 30px;
 }
 
 .about .content h3 {
@@ -565,6 +567,12 @@ section {
   margin-bottom: 10px;
 }
 
+.about .icon-boxes .icon-box svg {
+  width: 32px;
+  color: #60caff;
+  height: 32px;
+}
+
 .about .icon-boxes .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
@@ -573,12 +581,6 @@ section {
 
 .about .icon-boxes .icon-box p {
   font-size: 15px;
-}
-
-@media (max-width: 1200px) {
-  .about .content {
-    padding-right: 0;
-  }
 }
 
 @media (max-width: 768px) {
@@ -601,10 +603,6 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-}
-
-.clients img:hover {
-  transform: scale(1.15);
 }
 
 @media (max-width: 768px) {
@@ -684,12 +682,6 @@ section {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  .steps .content-item {
-    padding: 40px 0;
-  }
-}
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -760,6 +752,15 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+.services .row div {
+  max-height: 270px;
+}
+
+.services .row div .icon-box {
+  height: 100%;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1408,6 +1409,7 @@ section {
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  resize: none;
 }
 
 .contact .php-email-form button[type="submit"] {
@@ -1669,4 +1671,14 @@ html {
   visibility: visible;
   transition: visibility 1s, opacity 0.5s linear;
   opacity: 1;
+}
+
+*::-webkit-scrollbar {
+  width: 0 !important;
+}
+* {
+  overflow: -moz-scrollbars-none;
+}
+* {
+  -ms-overflow-style: none;
 }

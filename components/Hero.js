@@ -1,4 +1,6 @@
-function Hero() {
+import { TypeAnimation } from "react-type-animation";
+function Hero({ locale }) {
+  console.log(locale);
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
@@ -6,10 +8,21 @@ function Hero() {
           className="container d-flex flex-column align-items-center justify-content-center"
           data-aos="fade-up"
         >
-          <h1>Build Better Websites With Bikin</h1>
-          <h2>
-            We are team of talented designers making websites with Bootstrap
-          </h2>
+          <TypeAnimation
+            sequence={[
+              "We Make Original Things",
+              2000,
+              "We Make Fun Things",
+              2000,
+              "We Make Creative Things",
+              2000,
+            ]}
+            wrapper="h1"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: "3em" }}
+          />
+          <h2>We are team of talented developers making nice softwares.</h2>
           <a href="#about" className="btn-get-started scrollto">
             Get Started
           </a>

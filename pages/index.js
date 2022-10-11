@@ -24,7 +24,7 @@ export default function Home() {
       <main id="main">
         <About />
         <Partners />
-        <Steps />
+        {/* <Steps /> */}
         <Services />
         <Portfolio />
         <Team />

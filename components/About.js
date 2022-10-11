@@ -1,4 +1,12 @@
+import { useState } from "react";
+import {
+  UilCommentsAlt,
+  UilBracketsCurly,
+  UilLifeRing,
+  UilFolderCheck,
+} from "@iconscout/react-unicons";
 function About() {
+  const [magic, setMagic] = useState(false);
   return (
     <section id="about" className="about">
       <div className="container">
@@ -8,15 +16,22 @@ function About() {
             data-aos="fade-right"
           >
             <div className="content">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>What are we doing?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-                aute irure dolor in reprehenderit
+                We make suitable projects according to your wishes. Some people
+                say we do magic. They're not kidding we really do magic. <br />
               </p>
-              <a href="#" className="about-btn">
-                About us <i className="bx bx-chevron-right"></i>
-              </a>
+              <h2
+                id="magic"
+                onMouseEnter={() => {
+                  setMagic(true);
+                }}
+                onMouseLeave={() => {
+                  setMagic(false);
+                }}
+              >
+                Abracadabra! {!magic && "🎩"} {magic && "🐰"}
+              </h2>
             </div>
           </div>
           <div
@@ -30,11 +45,13 @@ function About() {
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <i className="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
+                  <i>
+                    <UilFolderCheck />
+                  </i>
+                  <h4>Project based work</h4>
                   <p>
-                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-                    laboris nisi ut aliquip
+                    Our priority is your project. We do our work as quickly as
+                    possible.
                   </p>
                 </div>
                 <div
@@ -42,11 +59,13 @@ function About() {
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <i className="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
+                  <i>
+                    <UilBracketsCurly />
+                  </i>
+                  <h4>Current Technologies</h4>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt
+                    We use the most up-to-date structures and frameworks for
+                    your systems.
                   </p>
                 </div>
                 <div
@@ -54,23 +73,24 @@ function About() {
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <i className="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>
-                    Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-                    maiores omnis facere
-                  </p>
+                  <i>
+                    <UilCommentsAlt />
+                  </i>
+                  <h4>Continuous communication</h4>
+                  <p>You can contact us directly during the process.</p>
                 </div>
                 <div
                   className="col-md-6 icon-box"
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  <i className="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
+                  <i>
+                    <UilFolderCheck />
+                  </i>
+                  <h4>Post-project support</h4>
                   <p>
-                    Expedita veritatis consequuntur nihil tempore laudantium
-                    vitae denat pacta
+                    We provide support after your project and accept your
+                    revisions.
                   </p>
                 </div>
               </div>
