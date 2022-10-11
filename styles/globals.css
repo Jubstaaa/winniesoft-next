@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #6c7afa;
+  color: #60caff;
   text-decoration: none;
 }
 
@@ -725,6 +725,12 @@ section {
   margin-bottom: 15px;
 }
 
+.services .icon svg {
+  width: 64px;
+  height: 64px;
+  color: #2d405f;
+}
+
 .services .icon i {
   font-size: 32px;
   line-height: 1;
@@ -761,6 +767,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  transition: all 2s ease-in-out;
 }
 
 .portfolio #portfolio-flters {
@@ -1520,7 +1527,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #6c7afa;
+  color: #60caff;
   font-size: 18px;
   line-height: 1;
 }
@@ -1638,4 +1645,28 @@ img {
 
 .carousel.carousel-slider {
   margin: auto !important;
+}
+
+.portfolio-description p {
+  max-height: 300px;
+  overflow: scroll;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.not-showing {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s linear;
+}
+.showing {
+  visibility: visible;
+  transition: visibility 1s, opacity 0.5s linear;
+  opacity: 1;
 }

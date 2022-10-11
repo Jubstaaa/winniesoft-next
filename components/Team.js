@@ -7,9 +7,9 @@ import {
 } from "@iconscout/react-unicons";
 function Team() {
   return (
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
+    <section id="team" className="team">
+      <div className="container" data-aos="fade-up">
+        <div className="section-title">
           <h2>Team</h2>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
@@ -19,22 +19,22 @@ function Team() {
           </p>
         </div>
 
-        <div class="row justify-content-center align-items-center">
+        <div className="row justify-content-center align-items-center">
           {team.map((people, i) => (
             <div
               key={i}
-              class="col-xl-3 col-lg-4 col-md-6"
+              className="col-xl-3 col-lg-4 col-md-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div class="member">
-                <img src={people.image} class="img-fluid" alt="" />
-                <div class="member-info">
-                  <div class="member-info-content">
+              <div className="member">
+                <img src={people.image} className="img-fluid" alt="" />
+                <div className="member-info">
+                  <div className="member-info-content">
                     <h4>{people.name}</h4>
                     <span>{people.title}</span>
                   </div>
-                  <div class="social">
+                  <div className="social">
                     {people.socials.instagram && (
                       <a
                         href={people.socials.instagram}

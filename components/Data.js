@@ -1,69 +1,8 @@
-const playSearch = [
-  {
-    search_metadata: {
-      id: "63445914d5b1c55eff80b4bd",
-      status: "Success",
-      json_endpoint:
-        "https://serpapi.com/searches/701b0db3eb812d3d/63445914d5b1c55eff80b4bd.json",
-      created_at: "2022-10-10 17:40:36 UTC",
-      processed_at: "2022-10-10 17:40:36 UTC",
-      google_play_url:
-        "https://play.google.com/store/search?q=winniesoft.com&c=apps&hl=en&gl=us",
-      raw_html_file:
-        "https://serpapi.com/searches/701b0db3eb812d3d/63445914d5b1c55eff80b4bd.html",
-      total_time_taken: 0.38,
-    },
-    search_parameters: {
-      engine: "google_play",
-      q: "winniesoft.com",
-      hl: "en",
-      gl: "us",
-      store: "games",
-    },
-    organic_results: [
-      {
-        items: [
-          {
-            title: "Eşli 101 YazBoz",
-            link: "https://play.google.com/store/apps/details?id=com.winniesoft.yazboz",
-            product_id: "com.winniesoft.yazboz",
-            serpapi_link:
-              "https://serpapi.com/search.json?engine=google_play_product&gl=us&hl=en&product_id=com.winniesoft.yazboz&store=apps",
-            author: "WinnieSoft",
-            thumbnail:
-              "https://play-lh.googleusercontent.com/1k_mXau5Y4xgJQ3VVQ6hhHGXfuQ0jyjdsAhGogdJt5c5-dYim1_AlwtDROb9Kw72Mu4=s64-rw",
-          },
-          {
-            title: "Circle Base",
-            link: "https://play.google.com/store/apps/details?id=com.WinnieSoft.CircleBase",
-            product_id: "com.WinnieSoft.CircleBase",
-            serpapi_link:
-              "https://serpapi.com/search.json?engine=google_play_product&gl=us&hl=en&product_id=com.WinnieSoft.CircleBase&store=apps",
-            author: "WinnieSoft",
-            video:
-              "https://play.google.com/video/lava/web/player/yt:movie:xSUEepdsjFY?autoplay=1&embed=play",
-            thumbnail:
-              "https://play-lh.googleusercontent.com/7asEWHzwBeGkRX1Vgyunc_sgilEsl4Jfor9L48aAJLee9E2FvxEPJDv0A07fGVOzSXk=s64-rw",
-          },
-          {
-            title: "Reflex Check",
-            link: "https://play.google.com/store/apps/details?id=com.WinnieSoft.CheckReflex",
-            product_id: "com.WinnieSoft.CheckReflex",
-            serpapi_link:
-              "https://serpapi.com/search.json?engine=google_play_product&gl=us&hl=en&product_id=com.WinnieSoft.CheckReflex&store=apps",
-            author: "WinnieSoft",
-            thumbnail:
-              "https://play-lh.googleusercontent.com/r7BUAVRprq1-DzCB3zL0aPtofXwFTZm-yJhzZGU2y719d50wkVgFUGld18GnRRTipg=s64-rw",
-          },
-        ],
-      },
-    ],
-  },
-];
-
 const playApps = [
   {
     name: "circle-base",
+    type: "Mobile Game / App",
+
     search_metadata: {
       id: "63445a89116a55cbb4ae5b76",
       status: "Success",
@@ -189,6 +128,8 @@ const playApps = [
   },
   {
     name: "reflex-check",
+    type: "Mobile Game / App",
+
     search_metadata: {
       id: "63445a90382427c23b0816f3",
       status: "Success",
@@ -309,6 +250,7 @@ const playApps = [
   },
   {
     name: "esli-101-yazboz",
+    type: "Mobile Game / App",
     search_metadata: {
       id: "6344596036e6a94159545a43",
       status: "Success",
@@ -450,4 +392,68 @@ const team = [
   },
 ];
 
-export { playSearch, playApps, team };
+const cloneGameImage = "/assets/img/clone-game.jpg";
+
+const cloneGames = [
+  {
+    name: "snake-clone",
+    type: "Clone Game",
+    product_info: {
+      title: "Snake Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/SnakeClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with arrow keys. Press space to restart.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "zigzag-clone",
+    type: "Clone Game",
+
+    product_info: {
+      title: "Snake Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/SnakeClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with arrow keys. Press space to restart.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+];
+
+export { playApps, team, cloneGames };

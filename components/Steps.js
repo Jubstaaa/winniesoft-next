@@ -1,10 +1,10 @@
 function Steps() {
   return (
-    <section id="steps" class="steps">
-      <div class="container">
-        <div class="row no-gutters" data-aos="fade-up">
+    <section id="steps" className="steps">
+      <div className="container">
+        <div className="row no-gutters" data-aos="fade-up">
           <div
-            class="col-lg-4 col-md-6 content-item"
+            className="col-lg-4 col-md-6 content-item"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -17,7 +17,7 @@ function Steps() {
           </div>
 
           <div
-            class="col-lg-4 col-md-6 content-item"
+            className="col-lg-4 col-md-6 content-item"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -30,7 +30,7 @@ function Steps() {
           </div>
 
           <div
-            class="col-lg-4 col-md-6 content-item"
+            className="col-lg-4 col-md-6 content-item"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -43,7 +43,7 @@ function Steps() {
           </div>
 
           <div
-            class="col-lg-4 col-md-6 content-item"
+            className="col-lg-4 col-md-6 content-item"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -56,7 +56,7 @@ function Steps() {
           </div>
 
           <div
-            class="col-lg-4 col-md-6 content-item"
+            className="col-lg-4 col-md-6 content-item"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -69,7 +69,7 @@ function Steps() {
           </div>
 
           <div
-            class="col-lg-4 col-md-6 content-item"
+            className="col-lg-4 col-md-6 content-item"
             data-aos="fade-up"
             data-aos-delay="300"
           >

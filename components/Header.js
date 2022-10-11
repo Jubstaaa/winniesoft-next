@@ -1,45 +1,71 @@
+import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
 function Header() {
+  const router = useRouter();
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between">
-        <h1 className="logo">
-          <a href="index.html">Bikin</a>
-        </h1>
-
-        <a href="index.html" className="logo">
-          <img src="assets/img/logo.png" alt="" className="img-fluid" />
-        </a>
+        <div className="d-flex flex-col align-items-center justify-content-center">
+          <a className="logo" onClick={() => router.push("/")}>
+            <Image
+              width={50}
+              height={70}
+              src="/assets/img/logo.png"
+              alt=""
+              className="img-fluid"
+            />
+          </a>
+          <h1 className="logo mx-2">
+            <a onClick={() => router.push("/")}>Winniesoft</a>
+          </h1>
+        </div>
 
         <nav id="navbar" className="navbar">
           <ul>
             <li>
-              <a className="nav-link scrollto active" href="#hero">
+              <a className="nav-link scrollto" onClick={() => router.push("/")}>
                 Home
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about">
+              <a
+                onClick={() => router.push("/#about")}
+                className="nav-link scrollto"
+              >
                 About
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#services">
+              <a
+                className="nav-link scrollto"
+                onClick={() => router.push("/#services")}
+              >
                 Services
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto " href="#portfolio">
+              <a
+                className="nav-link scrollto"
+                onClick={() => router.push("/#portfolio")}
+              >
                 Portfolio
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#team">
+              <a
+                className="nav-link scrollto"
+                onClick={() => router.push("/#team")}
+              >
                 Team
               </a>
             </li>
 
             <li>
-              <a className="nav-link scrollto" href="#contact">
+              <a
+                className="nav-link scrollto"
+                onClick={() => router.push("/#contact")}
+              >
                 Contact
               </a>
             </li>

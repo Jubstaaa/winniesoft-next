@@ -1,8 +1,13 @@
+import {
+  UilPlayCircle,
+  UilMobileAndroid,
+  UilBrowser,
+} from "@iconscout/react-unicons";
 function Services() {
   return (
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
+    <section id="services" className="services">
+      <div className="container" data-aos="fade-up">
+        <div className="section-title">
           <h2>Services</h2>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
@@ -12,20 +17,20 @@ function Services() {
           </p>
         </div>
 
-        <div class="row">
+        <div className="row align-items-center justify-content-center">
           <div
-            class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div class="icon-box">
-              <div class="icon">
-                <i class="bx bxl-dribbble"></i>
+            <div className="icon-box">
+              <div className="icon">
+                <UilPlayCircle />
               </div>
-              <h4 class="title">
-                <a href="">Lorem Ipsum</a>
+              <h4 className="title">
+                <a href="#portfolio">Lorem Ipsum</a>
               </h4>
-              <p class="description">
+              <p className="description">
                 Voluptatum deleniti atque corrupti quos dolores et quas
                 molestias excepturi
               </p>
@@ -33,18 +38,18 @@ function Services() {
           </div>
 
           <div
-            class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div class="icon-box">
-              <div class="icon">
-                <i class="bx bx-file"></i>
+            <div className="icon-box">
+              <div className="icon">
+                <UilMobileAndroid />
               </div>
-              <h4 class="title">
-                <a href="">Sed ut perspiciatis</a>
+              <h4 className="title">
+                <a href="#portfolio">Sed ut perspiciatis</a>
               </h4>
-              <p class="description">
+              <p className="description">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore
               </p>
@@ -52,39 +57,20 @@ function Services() {
           </div>
 
           <div
-            class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <div class="icon-box">
-              <div class="icon">
-                <i class="bx bx-tachometer"></i>
+            <div className="icon-box">
+              <div className="icon">
+                <UilBrowser />
               </div>
-              <h4 class="title">
-                <a href="">Magni Dolores</a>
+              <h4 className="title">
+                <a href="#portfolio">Magni Dolores</a>
               </h4>
-              <p class="description">
+              <p className="description">
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="icon-box">
-              <div class="icon">
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4 class="title">
-                <a href="">Nemo Enim</a>
-              </h4>
-              <p class="description">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis
               </p>
             </div>
           </div>

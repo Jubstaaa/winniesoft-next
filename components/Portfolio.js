@@ -1,20 +1,42 @@
-import { playSearch } from "./Data";
+import { playApps, cloneGames } from "./Data";
 import { UilLink } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
-
+import { useState } from "react";
+import { useEffect } from "react";
 function Portfolio() {
+  const resultAll = [...playApps, ...cloneGames];
+  const [result, setResult] = useState(resultAll);
   const router = useRouter();
-  const makeUrl = (string) => {
-    return string
-      .toLowerCase()
-      .replace(/ğ/gim, "g")
-      .replace(/ü/gim, "u")
-      .replace(/ş/gim, "s")
-      .replace(/ı/gim, "i")
-      .replace(/ö/gim, "o")
-      .replace(/ç/gim, "c")
-      .replace(/ /gim, "-");
+  let filters = ["All"];
+  resultAll.map((item) => {
+    filters.push(item.type);
+  });
+  filters = [...new Set(filters)];
+
+  useEffect(() => {
+    document
+      .querySelector("#portfolio-flters li:first-child")
+      .classList.add("filter-active");
+  }, []);
+
+  const filterFunc = (e) => {
+    e.preventDefault();
+
+    setResult(
+      e.target.innerHTML === "All"
+        ? resultAll
+        : e.target.innerHTML === "Mobile Game / App"
+        ? [...playApps]
+        : e.target.innerHTML === "Clone Game"
+        ? [...cloneGames]
+        : null
+    );
+    document.querySelectorAll("#portfolio-flters li").forEach((filter) => {
+      filter.classList.remove("filter-active");
+    });
+    e.target.classList.add("filter-active");
   };
+
   return (
     <section id="portfolio" className="portfolio">
       <div className="container" data-aos="fade-up">
@@ -31,33 +53,30 @@ function Portfolio() {
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" className="filter-active">
-                All
-              </li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              {filters.map((filter, i) => (
+                <li className="mx-1" key={i} onClick={filterFunc}>
+                  {filter}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
         <div className="row portfolio-container">
-          {playSearch[0].organic_results[0].items.map((app, i) => (
-            <div key={i} className="col-lg-4 col-6  portfolio-item filter-app">
+          {result.map((app, i) => (
+            <div key={i} className="col-lg-3 col-6  portfolio-item filter-app">
               <div className="portfolio-wrap">
                 <img
-                  src={app.thumbnail.replace("s64", "s512")}
+                  src={app.product_info.thumbnail.replace("s64", "s512")}
                   className="img-fluid"
                   alt=""
                 />
                 <div className="portfolio-info">
-                  <h4>{app.title}</h4>
-                  <p>Mobile Game / App</p>
+                  <h4>{app.product_info.title}</h4>
+                  <p>{app.type}</p>
                   <div className="portfolio-links">
                     <a
-                      onClick={() =>
-                        router.push(`/project/${makeUrl(app.title)}`)
-                      }
+                      onClick={() => router.push(`/project/${app.name}`)}
                       title="More Details"
                     >
                       <i className="mx-2">

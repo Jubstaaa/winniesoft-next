@@ -4,6 +4,7 @@ import {
   UilInstagramAlt,
   UilGithub,
   UilGooglePlay,
+  UilAngleRightB,
 } from "@iconscout/react-unicons";
 function Footer() {
   return (
@@ -53,12 +54,25 @@ function Footer() {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Game Development</a>
+                  <i>
+                    {" "}
+                    <UilAngleRightB />
+                  </i>{" "}
+                  <a href="#services">Game Development</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Web Development</a>
+                  <i>
+                    {" "}
+                    <UilAngleRightB />
+                  </i>{" "}
+                  <a href="#services">Mobile Development</a>
+                </li>
+                <li>
+                  <i>
+                    {" "}
+                    <UilAngleRightB />
+                  </i>{" "}
+                  <a href="#services">Web Development</a>
                 </li>
                 {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
