@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Projects from "../components/Projects";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
+import Loader from "../components/Loader";
 export default function Home() {
   return (
     <div className="app">

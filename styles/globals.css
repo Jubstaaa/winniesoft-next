@@ -843,6 +843,11 @@ section {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+@media screen and (max-width: 768px) {
+  .project .project-wrap .project-info {
+    opacity: 1;
+  }
+}
 
 .project .project-wrap .project-info h4 {
   font-size: 20px;
