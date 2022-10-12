@@ -63,7 +63,7 @@ function Header() {
               <a
                 className="nav-link scrollto"
                 onClick={() => {
-                  router.push("/#portfolio");
+                  router.push("/#project");
                   setShowMenu(false);
                 }}
               >

@@ -1,3 +1,5 @@
+const cloneGameImage = "/assets/img/clone-game.jpg";
+
 const playApps = [
   {
     name: "circle-base",
@@ -367,33 +369,6 @@ const playApps = [
     ],
   },
 ];
-
-const team = [
-  {
-    name: "İlker Balcılar",
-    title: "Web Developer",
-    image: "https://avatars.githubusercontent.com/u/9998250?v=4",
-    socials: {
-      instagram: "https://www.instagram.com/jubstaa/",
-      twitter: "https://twitter.com/Jubstaaa",
-      github: "https://github.com/Jubstaaa",
-      linkedin: "https://www.linkedin.com/in/ilker-balcilar/",
-    },
-  },
-  {
-    name: "Bilge Kaan Hacımustafaoğlu",
-    title: "Unity Developer",
-    image: "https://avatars.githubusercontent.com/u/93266216?v=4",
-    socials: {
-      instagram: "https://www.instagram.com/bilgeamakaan/",
-      github: "https://github.com/BilgeKaanpc",
-      linkedin: "https://www.linkedin.com/in/bilgek1/",
-    },
-  },
-];
-
-const cloneGameImage = "/assets/img/clone-game.jpg";
-
 const cloneGames = [
   {
     name: "snake-clone",
@@ -593,7 +568,7 @@ const cloneGames = [
     updated_on: "Sept 12, 2022",
   },
   {
-    name: "helix-jumg-clone",
+    name: "helix-jump-clone",
     product_info: {
       title: "Helix Jump Clone",
       authors: [
@@ -703,6 +678,30 @@ const cloneGames = [
       },
     ],
     updated_on: "Sept 12, 2022",
+  },
+];
+
+const team = [
+  {
+    name: "İlker Balcılar",
+    title: "Web Developer",
+    image: "https://avatars.githubusercontent.com/u/9998250?v=4",
+    socials: {
+      instagram: "https://www.instagram.com/jubstaa/",
+      twitter: "https://twitter.com/Jubstaaa",
+      github: "https://github.com/Jubstaaa",
+      linkedin: "https://www.linkedin.com/in/ilker-balcilar/",
+    },
+  },
+  {
+    name: "Bilge Kaan Hacımustafaoğlu",
+    title: "Unity Developer",
+    image: "https://avatars.githubusercontent.com/u/93266216?v=4",
+    socials: {
+      instagram: "https://www.instagram.com/bilgeamakaan/",
+      github: "https://github.com/BilgeKaanpc",
+      linkedin: "https://www.linkedin.com/in/bilgek1/",
+    },
   },
 ];
 

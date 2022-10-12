@@ -5,9 +5,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 function Projects() {
   const resultAll = [...playApps, ...cloneGames];
-  const [result, setResult] = useState(resultAll);
+  const [result, setResult] = useState(playApps);
   const router = useRouter();
-  let filters = ["All"];
+  let filters = [];
   resultAll.map((item) => {
     filters.push(item.type);
   });
@@ -23,9 +23,7 @@ function Projects() {
     e.preventDefault();
 
     setResult(
-      e.target.innerHTML === "All"
-        ? resultAll
-        : e.target.innerHTML === "Mobile Game / App"
+      e.target.innerHTML === "Mobile Game / App"
         ? [...playApps]
         : e.target.innerHTML === "Clone Game"
         ? [...cloneGames]
@@ -77,7 +75,7 @@ function Projects() {
                   <p>{app.type}</p>
                   <div className="project-links">
                     <a
-                      onClick={() => router.push(`/project/${app.name}`)}
+                      onClick={() => router.push(`/${app.name}`)}
                       title="More Details"
                     >
                       <i className="mx-2">
