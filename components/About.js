@@ -19,7 +19,7 @@ function About() {
               <h3>What are we doing?</h3>
               <p>
                 We make suitable projects according to your wishes. Some people
-                say we do magic. They're not kidding we really do magic. <br />
+                say we do magic. They are not kidding we really do magic. <br />
               </p>
               <div className="d-flex justify-content-around align-items-center">
                 <h2 className="d-inline">Abracadabra!</h2>
