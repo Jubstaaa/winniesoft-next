@@ -1699,3 +1699,7 @@ html {
 .ril-image-current.ril__image {
   transform: none !important;
 }
+.ril-zoom-in,
+.ril-zoom-out {
+  display: none;
+}

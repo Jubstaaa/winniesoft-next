@@ -75,7 +75,7 @@ function Projects() {
                   <p>{app.type}</p>
                   <div className="project-links">
                     <a
-                      onClick={() => router.push(`/${app.name}`)}
+                      onClick={() => router.push(`/${app.name + "#header"}`)}
                       title="More Details"
                     >
                       <i className="mx-2">
