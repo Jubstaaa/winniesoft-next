@@ -1696,3 +1696,6 @@ html {
 .lighbox-image {
   cursor: pointer;
 }
+.ril-image-current.ril__image {
+  transform: none !important;
+}
