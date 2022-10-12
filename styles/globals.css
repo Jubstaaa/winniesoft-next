@@ -1678,7 +1678,7 @@ html {
   opacity: 1;
 }
 
-/* *::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0 !important;
 }
 * {
@@ -1686,7 +1686,7 @@ html {
 }
 * {
   -ms-overflow-style: none;
-} */
+}
 .unity-button {
   cursor: pointer;
 }

@@ -1,11 +1,8 @@
 import { Unity, useUnityContext } from "react-unity-webgl";
 import Loader from "./Loader";
 import { useState, useEffect } from "react";
-import {
-  UilExpandArrowsAlt,
-  UilCompressArrows,
-} from "@iconscout/react-unicons";
-function Game({ name }) {
+import { UilExpandArrowsAlt } from "@iconscout/react-unicons";
+function Game({ name, display }) {
   const [loading, setLoading] = useState(0);
   const { unityProvider, isLoaded, requestFullscreen } = useUnityContext({
     loaderUrl: `/build/${name}.loader.js`,
@@ -35,11 +32,20 @@ function Game({ name }) {
       )}
       <Unity
         unityProvider={unityProvider}
-        style={{
-          maxHeight: "100%",
-          maxWidth: "100%",
-          width: "100%",
-        }}
+        style={
+          display == "vertical"
+            ? {
+                maxHeight: "100%",
+                maxWidth: "100%",
+                width: "100%",
+                height: "100%",
+              }
+            : {
+                maxHeight: "100%",
+                maxWidth: "100%",
+                width: "100%",
+              }
+        }
       />
       <div className="position-absolute m-2 top-0 end-0 bg-white p-1 rounded opacity-50 unity-button">
         <UilExpandArrowsAlt onClick={handleClick} />

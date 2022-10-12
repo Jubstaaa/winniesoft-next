@@ -82,8 +82,21 @@ function Project(props) {
                     </Carousel>
                   </div>
                 ) : (
-                  <div className="game w-auto w-100 h-100 position-relative ">
-                    <Game name={props.name} />
+                  <div
+                    className="game m-auto position-relative "
+                    style={
+                      project.display == "vertical"
+                        ? {
+                            height: "528px",
+                            width: "297px",
+                          }
+                        : {
+                            height: "100% !important",
+                            width: "auto !important",
+                          }
+                    }
+                  >
+                    <Game name={props.name} display={project.display} />
                   </div>
                 )}
               </div>
@@ -155,6 +168,12 @@ function Project(props) {
                 </div>
                 <div className="project-description">
                   <h2>{project.product_info.title}</h2>
+                  {project.about_this_game.warning && (
+                    <div class="alert alert-warning" role="alert">
+                      {project.about_this_game.warning}
+                    </div>
+                  )}
+
                   <p>
                     {project.about_this_game
                       ? project.about_this_game.snippet
