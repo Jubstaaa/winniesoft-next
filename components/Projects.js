@@ -68,7 +68,7 @@ function Projects() {
                 <img
                   src={app.product_info.thumbnail.replace("s64", "s512")}
                   className="img-fluid"
-                  alt=""
+                  alt={`${app.product_info.title} Project Thumbnail`}
                 />
                 <div className="project-info">
                   <h4>{app.product_info.title}</h4>
