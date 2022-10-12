@@ -1687,3 +1687,9 @@ html {
 * {
   -ms-overflow-style: none;
 }
+.unity-button {
+  cursor: pointer;
+}
+#about {
+  cursor: url("/assets/img/magic-cursor.svg");
+}

@@ -59,7 +59,7 @@ function Project(props) {
                     </Carousel>
                   </div>
                 ) : (
-                  <div className="game w-auto w-100 h-100">
+                  <div className="game w-auto w-100 h-100 position-relative ">
                     <Game name={props.name} />
                   </div>
                 )}
