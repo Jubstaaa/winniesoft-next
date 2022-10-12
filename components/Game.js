@@ -3,14 +3,19 @@ import Loader from "./Loader";
 import { useState, useEffect } from "react";
 function Game({ name }) {
   const [loading, setLoading] = useState(0);
-  const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
+  const { unityProvider, isLoaded, requestFullscreen } = useUnityContext({
     loaderUrl: `/build/${name}.loader.js`,
     dataUrl: `/build/${name}.data`,
     frameworkUrl: `/build/${name}.framework.js`,
     codeUrl: `/build/${name}.wasm`,
   });
+
+  const handleClick = () => {
+    requestFullscreen(true);
+  };
+
   useEffect(() => {
-    if (loading <= 100)
+    if (loading < 100)
       setTimeout(() => {
         setLoading(loading + 1);
       }, 100);
@@ -32,6 +37,7 @@ function Game({ name }) {
           width: "100%",
         }}
       />
+      <button onClick={handleClick}>Enter Fullscreen</button>
     </>
   );
 }
