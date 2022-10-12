@@ -1,23 +1,36 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { playApps, cloneGames } from "./Data";
 import Game from "./Game";
+import Head from "next/head";
+import Image from "next/image";
 function Project(props) {
   const project =
     playApps.find(({ name }) => name == props.name) ||
     cloneGames.find(({ name }) => name == props.name);
   return (
     <div>
-      <Header />
+      <Head>
+        <title>
+          {project.product_info.title} | Project | Web | Mobile | Game
+          Winniesoft
+        </title>
+        <meta
+          content={
+            project.about_this_game
+              ? project.about_this_game.snippet
+              : project.about_this_app.snippet
+          }
+          name="description"
+        ></meta>
+      </Head>
       <main id="main">
-        <section id="portfolio-details" className="portfolio-details">
+        <section id="project-details" className="project-details">
           <div className="container">
             <div className="row gy-4">
               <div className="col-lg-8">
                 {project.media ? (
-                  <div className="portfolio-details-slider swiper">
+                  <div className="project-details-slider swiper">
                     <Carousel
                       showStatus={false}
                       showThumbs={false}
@@ -30,11 +43,15 @@ function Project(props) {
                     >
                       {project.media.images.map((item, i) => (
                         <div key={i}>
-                          <img
+                          <Image
+                            width={450}
+                            height={800}
                             src={item
                               .replace("w526", "w900")
                               .replace("h296", "h1600")}
-                            alt=""
+                            alt={`${project.product_info.title} Project Image ${
+                              i + 1
+                            }`}
                             loading="lazy"
                           />
                         </div>
@@ -49,7 +66,7 @@ function Project(props) {
               </div>
 
               <div className="col-lg-4">
-                <div className="portfolio-info">
+                <div className="project-info">
                   <h3>Project information</h3>
                   <ul>
                     <li>
@@ -82,7 +99,7 @@ function Project(props) {
                     </li>
                   </ul>
                 </div>
-                <div className="portfolio-description">
+                <div className="project-description">
                   <h2>{project.product_info.title}</h2>
                   <p>
                     {project.about_this_game
@@ -95,7 +112,6 @@ function Project(props) {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

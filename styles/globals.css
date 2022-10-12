@@ -764,21 +764,21 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# project
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.project .project-item {
   margin-bottom: 30px;
   transition: all 2s ease-in-out;
 }
 
-.portfolio #portfolio-flters {
+.project #project-flters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio #portfolio-flters li {
+.project #project-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
@@ -792,17 +792,17 @@ section {
   border-radius: 3px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.project #project-flters li:hover,
+.project #project-flters li.filter-active {
   color: #fff;
   background: #60caff;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.project #project-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.project .project-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -810,7 +810,7 @@ section {
   background: rgba(45, 64, 95, 0.6);
 }
 
-/* .portfolio .portfolio-wrap::before {
+/* .project .project-wrap::before {
   content: "";
   background: rgba(45, 64, 95, 0.6);
   position: absolute;
@@ -823,11 +823,11 @@ section {
   opacity: 0;
 } */
 
-.portfolio .portfolio-wrap img {
+.project .project-wrap img {
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.project .project-wrap .project-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -844,13 +844,13 @@ section {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.project .project-wrap .project-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.project .project-wrap .project-info p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   text-transform: uppercase;
@@ -859,12 +859,12 @@ section {
   font-style: italic;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.project .project-wrap .project-links {
   text-align: center;
   z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.project .project-wrap .project-links a {
   color: #fff;
   margin: 0 5px 0 0;
   font-size: 28px;
@@ -872,37 +872,37 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.project .project-wrap .project-links a:hover {
   color: #9da7fc;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.project .project-wrap:hover::before {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.project .project-wrap:hover .project-info {
   opacity: 1;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# project Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.project-details {
   padding-top: 40px;
   margin-top: 70px;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.project-details .project-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.project-details .project-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.project-details
+  .project-details-slider
   .swiper-pagination
   .swiper-pagination-bullet {
   width: 12px;
@@ -912,19 +912,19 @@ section {
   border: 1px solid #60caff;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.project-details
+  .project-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
   background-color: #60caff;
 }
 
-.portfolio-details .portfolio-info {
+.project-details .project-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(45, 64, 95, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.project-details .project-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -932,27 +932,27 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.project-details .project-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.project-details .project-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.project-details .project-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.project-details .project-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.project-details .project-description p {
   padding: 0;
 }
 
@@ -1343,13 +1343,13 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact .form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
   background: #fff;
 }
 
-.contact .php-email-form .error-message {
+.contact .form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1358,11 +1358,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .form .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1371,14 +1371,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1391,28 +1391,28 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .form input,
+.contact .form textarea {
   border-radius: 5px;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .form input:focus,
+.contact .form textarea:focus {
   border-color: #8ea5ca;
 }
 
-.contact .php-email-form input {
+.contact .form input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact .form textarea {
   padding: 12px 15px;
   resize: none;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .form button[type="submit"] {
   background: #60caff;
   border: 0;
   padding: 10px 24px;
@@ -1421,7 +1421,7 @@ section {
   border-radius: 5px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .form button[type="submit"]:hover {
   background: #334fe6;
 }
 
@@ -1649,7 +1649,7 @@ img {
   margin: auto !important;
 }
 
-.portfolio-description p {
+.project-description p {
   max-height: 300px;
   overflow: scroll;
 }

@@ -12,7 +12,7 @@ function About() {
       <div className="container">
         <div className="row no-gutters">
           <div
-            className="content col-xl-5 d-flex align-items-stretch"
+            className="content col-xl-5 d-flex align-items-stretch justify-content-center"
             data-aos="fade-right"
           >
             <div className="content">
@@ -21,17 +21,25 @@ function About() {
                 We make suitable projects according to your wishes. Some people
                 say we do magic. They're not kidding we really do magic. <br />
               </p>
-              <h2
-                id="magic"
-                onMouseEnter={() => {
-                  setMagic(true);
-                }}
-                onMouseLeave={() => {
-                  setMagic(false);
-                }}
-              >
-                Abracadabra! {!magic && "🎩"} {magic && "🐰"}
-              </h2>
+              <div className="d-flex justify-content-around align-items-center">
+                <h2 className="d-inline">Abracadabra!</h2>
+                <h2 className="d-inline" style={{ fontSize: "4rem" }}>
+                  🪄
+                </h2>
+                <h2
+                  className="d-inline"
+                  style={{ fontSize: "4rem" }}
+                  id="magic"
+                  onMouseEnter={() => {
+                    setMagic(true);
+                  }}
+                  onMouseLeave={() => {
+                    setMagic(false);
+                  }}
+                >
+                  {!magic && "🎩"} {magic && "🐰"}
+                </h2>
+              </div>
             </div>
           </div>
           <div
@@ -85,7 +93,7 @@ function About() {
                   data-aos-delay="400"
                 >
                   <i>
-                    <UilFolderCheck />
+                    <UilLifeRing />
                   </i>
                   <h4>Post-project support</h4>
                   <p>

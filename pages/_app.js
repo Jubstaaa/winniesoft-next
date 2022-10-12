@@ -4,7 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import ToTop from "../components/ToTop";
-
+import Layout from "../components/Layout";
+import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
@@ -23,14 +24,17 @@ function MyApp({ Component, pageProps }) {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // for smoothly scrolling
+      behavior: "smooth",
     });
   };
   return (
-    <>
+    <Layout>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Component {...pageProps} />
       {showButton && <ToTop onClick={scrollToTop} />}
-    </>
+    </Layout>
   );
 }
 

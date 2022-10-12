@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-function Hero({ locale }) {
-  console.log(locale);
+function Hero() {
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
@@ -23,13 +22,13 @@ function Hero({ locale }) {
             style={{ fontSize: "3em" }}
           />
           <h2>We are team of talented developers making nice softwares.</h2>
-          <a href="#about" className="btn-get-started scrollto">
+          <a href="#about" className="btn-get-started ">
             Get Started
           </a>
           <img
             src="assets/img/hero-img.png"
             className="img-fluid hero-img"
-            alt=""
+            alt="Winniesoft Game Development,Mobile App Development,Web Development"
             data-aos="zoom-in"
             data-aos-delay="150"
           />

@@ -425,11 +425,9 @@ const cloneGames = [
     updated_on: "Sept 12, 2022",
   },
   {
-    name: "zigzag-clone",
-    type: "Clone Game",
-
+    name: "angry-birds-clone",
     product_info: {
-      title: "Snake Clone",
+      title: "Angry Birds Clone",
       authors: [
         {
           name: "BilgeKaanpc",
@@ -440,12 +438,264 @@ const cloneGames = [
       thumbnail: cloneGameImage,
       offers: [
         {
-          link: "https://github.com/BilgeKaanpc/SnakeClone",
+          link: "https://github.com/BilgeKaanpc/AngryBirdsClone",
         },
       ],
     },
     about_this_game: {
-      snippet: "You can play with arrow keys. Press space to restart.",
+      snippet: "You can play with the mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "balance-racing-clone",
+    product_info: {
+      title: "Balance Racing Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/BalanceRacingClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "zigzag-clone",
+    product_info: {
+      title: "ZigZag Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/ZigZagClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can press the button to play.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "office-fever-clone",
+    product_info: {
+      title: "Office Fever Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/OfficeFeverClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "monster-chase-clone",
+    product_info: {
+      title: "Monster Chase Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/MonsterChaseClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with arrow keys and space.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "hyper-drift-clone",
+    product_info: {
+      title: "Hyper Drift Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/HyperDriftClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with arrow keys.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "helix-jumg-clone",
+    product_info: {
+      title: "Helix Jump Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/HelixJumpClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "bullet-rush-clone",
+    product_info: {
+      title: "Bullet Rush Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/BulletRush-HyperCasual-",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "ball-stack-clone",
+    product_info: {
+      title: "Ball Stack Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/BallStack-HyperCasual-",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "asteroid-clone",
+    product_info: {
+      title: "Asteroid Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/AsteroidClone",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with arrow keys and space.",
     },
     categories: [
       {
@@ -456,4 +706,24 @@ const cloneGames = [
   },
 ];
 
-export { playApps, team, cloneGames };
+const partners = [
+  "android",
+  "bootstrap",
+  "cpp",
+  "cs",
+  "css",
+  "dart",
+  "firebase",
+  "flutter",
+  "git",
+  "html",
+  "js",
+  "nextjs",
+  "react",
+  "redux",
+  "tailwind",
+  "unity",
+  "vercel",
+];
+
+export { playApps, team, cloneGames, partners };

@@ -1,7 +1,6 @@
 import Project from "../../components/Project";
 
 function Projects({ name }) {
-  
   return (
     <div>
       <Project name={name} />

@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Link from "next/link";
 import Image from "next/image";
 import { UilBars, UilMultiply } from "@iconscout/react-unicons";
 import { useState } from "react";
@@ -16,7 +15,7 @@ function Header() {
               width={50}
               height={70}
               src="/assets/img/logo.png"
-              alt=""
+              alt="Winniesoft Logo"
               className="img-fluid"
             />
           </a>
