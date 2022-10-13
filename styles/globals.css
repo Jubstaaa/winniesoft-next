@@ -1354,8 +1354,7 @@ section {
   background: #fff;
 }
 
-.contact .form .error-message {
-  display: none;
+.form .error-message {
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -1363,12 +1362,11 @@ section {
   font-weight: 600;
 }
 
-.contact .form .error-message br + br {
+.form .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .form .sent-message {
-  display: none;
+.form .sent-message {
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -1376,14 +1374,13 @@ section {
   font-weight: 600;
 }
 
-.contact .form .loading {
-  display: none;
+.form .loading {
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .form .loading:before {
+.form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;

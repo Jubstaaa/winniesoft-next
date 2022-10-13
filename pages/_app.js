@@ -6,7 +6,9 @@ import { useEffect, useState } from "react";
 import ToTop from "../components/ToTop";
 import Layout from "../components/Layout";
 import Head from "next/head";
-function MyApp({ Component, pageProps }) {
+import { SessionProvider } from "next-auth/react";
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -28,21 +30,23 @@ function MyApp({ Component, pageProps }) {
     });
   };
   return (
-    <Layout>
-      <Head>
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
-        <meta
-          name="viewport"
-          content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
-        />
-      </Head>
-      <Component {...pageProps} />
-      {showButton && <ToTop onClick={scrollToTop} />}
-    </Layout>
+    <SessionProvider session={session}>
+      <Layout>
+        <Head>
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+          />
+          <meta
+            name="viewport"
+            content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+          />
+        </Head>
+        <Component {...pageProps} />
+        {showButton && <ToTop onClick={scrollToTop} />}
+      </Layout>
+    </SessionProvider>
   );
 }
 
