@@ -7,23 +7,7 @@ import Projects from "../components/Projects";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Loader from "../components/Loader";
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase-config";
 export default function Home({ webApps }) {
-  const func = async () => {
-    try {
-      const docRef = await addDoc(collection(db, "users"), {
-        first: "Ada",
-        last: "Lovelace",
-        born: 1815,
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  };
-  func();
-
   return (
     <div className="app">
       <Head>
