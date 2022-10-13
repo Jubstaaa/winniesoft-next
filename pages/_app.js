@@ -58,6 +58,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             name="viewport"
             content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
           />
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </Head>
         <Component {...pageProps} />
         {showButton && <ToTop onClick={scrollToTop} />}
