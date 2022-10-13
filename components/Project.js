@@ -73,7 +73,7 @@ function Project(props) {
                       <strong>Category</strong>: {project.categories[0].name}
                     </li>
                     <li>
-                      <strong>Client</strong>:{" "}
+                      <strong>Owner</strong>:{" "}
                       <a
                         href={project.product_info.authors[0].link}
                         target="_blank"

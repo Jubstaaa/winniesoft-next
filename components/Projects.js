@@ -3,15 +3,12 @@ import { UilLink } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { useEffect } from "react";
-function Projects() {
+function Projects({ webApps }) {
   const resultAll = [...playApps, ...cloneGames];
   const [result, setResult] = useState(playApps);
+  const [webResult, setWebResult] = useState([]);
   const router = useRouter();
-  let filters = [];
-  resultAll.map((item) => {
-    filters.push(item.type);
-  });
-  filters = [...new Set(filters)];
+  let filters = ["Mobile Game / App", "Clone Game", "Web App"];
 
   useEffect(() => {
     document
@@ -27,8 +24,11 @@ function Projects() {
         ? [...playApps]
         : e.target.innerHTML === "Clone Game"
         ? [...cloneGames]
-        : null
+        : []
     );
+
+    setWebResult(e.target.innerHTML === "Web App" ? [...webApps] : []);
+
     document.querySelectorAll("#project-flters li").forEach((filter) => {
       filter.classList.remove("filter-active");
     });
@@ -76,6 +76,43 @@ function Projects() {
                   <div className="project-links">
                     <a
                       onClick={() => router.push(`/${app.name}`)}
+                      title="More Details"
+                    >
+                      <i className="mx-2">
+                        <UilLink />
+                      </i>
+                      More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+          {webResult.map((webApp, i) => (
+            <div
+              key={i}
+              className="col-lg-2 col-md-4 col-6  project-item filter-app"
+            >
+              <div className="project-wrap">
+                <img
+                  src="/assets/img/web-app.jpeg"
+                  className="img-fluid"
+                  alt=""
+                />
+                <div className="project-info">
+                  <h4>
+                    {webApp.name
+                      .replace("-", " ")
+                      .replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
+                        letter.toUpperCase()
+                      )}
+                  </h4>
+                  <p>Web App</p>
+                  <div className="project-links">
+                    <a
+                      onClick={() =>
+                        router.push(`/${webApp.name.toLowerCase()}`)
+                      }
                       title="More Details"
                     >
                       <i className="mx-2">
