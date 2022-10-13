@@ -19,14 +19,11 @@ export const authOptions = {
         ) {
           return user;
         } else {
-          // If you return null then an error will be displayed advising the user to check their details.
           return null;
-
-          // You can also Reject this callback with an Error thus the user will be sent to the error page with the error message as a query parameter
         }
       },
     }),
   ],
-  secret: "bd4bcc17af040f7c3d6ed93615ca8e29",
+  secret: process.env.NEXTAUTH_SECRET,
 };
 export default NextAuth(authOptions);

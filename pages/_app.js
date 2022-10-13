@@ -7,6 +7,7 @@ import ToTop from "../components/ToTop";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const [showButton, setShowButton] = useState(false);
@@ -32,6 +33,21 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
       <Layout>
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+        page_path: window.location.pathname,
+        });
+    `}
+        </Script>
         <Head>
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta

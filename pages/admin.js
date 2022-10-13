@@ -35,45 +35,49 @@ function Admin({ contactForms, subscribeForms }) {
                 </button>
               </div>
               <h2>Contact Forms</h2>
-              <table className="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Subject</th>
-                    <th scope="col">Message</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {contactForms.map((form, i) => (
-                    <tr key={i}>
-                      <th>{i + 1}</th>
-                      <td>{form.name}</td>
-                      <td>{form.email}</td>
-                      <td>{form.subject}</td>
-                      <td>{form.message}</td>
+              <div class="table-responsive">
+                <table className="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Subject</th>
+                      <th scope="col">Message</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {contactForms.map((form, i) => (
+                      <tr key={i}>
+                        <th>{i + 1}</th>
+                        <td>{form.name}</td>
+                        <td>{form.email}</td>
+                        <td>{form.subject}</td>
+                        <td>{form.message}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <h2>Subscribe Forms</h2>
-              <table className="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {subscribeForms.map((form, i) => (
-                    <tr key={i}>
-                      <th>{i + 1}</th>
-                      <td>{form.email}</td>
+              <div class="table-responsive">
+                <table className="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Email</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {subscribeForms.map((form, i) => (
+                      <tr key={i}>
+                        <th>{i + 1}</th>
+                        <td>{form.email}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </>
           )}
         </div>
