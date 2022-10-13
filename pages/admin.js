@@ -1,12 +1,15 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { db } from "../firebase-config";
-
+import { db } from "../firebase";
+import Head from "next/head";
 function Admin({ contactForms, subscribeForms }) {
   const { data: session } = useSession();
 
   return (
     <>
+      <Head>
+        <title>Admin | Winniesoft</title>
+      </Head>
       <section id="breadcrumbs" className="breadcrumbs">
         <div className="container"></div>
       </section>

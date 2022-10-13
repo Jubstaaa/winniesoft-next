@@ -4,8 +4,12 @@ function WebApp({ webApp }) {
     <div>
       <Head>
         <title>
-          {webApp.name.replace("-", " ")} | Project | Web | Mobile | Game |
-          Winniesoft
+          {webApp.name
+            .replace("-", " ")
+            .replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
+              letter.toUpperCase()
+            )}{" "}
+          | Project | Web | Mobile | Game | Winniesoft
         </title>
       </Head>
       <main id="main">

@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 import { addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase-config";
+import { db } from "../firebase";
 import { useState } from "react";
 
 function ContactForm() {

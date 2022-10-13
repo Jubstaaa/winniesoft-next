@@ -31,7 +31,7 @@ function About() {
                   onMouseEnter={() => {
                     setTimeout(() => {
                       setMagic(true);
-                    }, 1000);
+                    }, 500);
                     setTimeout(() => {
                       setMagic(false);
                     }, 4000);

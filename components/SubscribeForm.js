@@ -1,12 +1,13 @@
 import { Formik } from "formik";
 import { addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase-config";
+import { db } from "../firebase";
 import { useState } from "react";
 
 function SubscribeForm() {
   const [loading, setLoading] = useState(false);
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState(false);
+
   return (
     <div className="col-lg-4 col-md-6 footer-newsletter form">
       <h4>Join Our Newsletter</h4>
@@ -17,16 +18,20 @@ function SubscribeForm() {
         }}
         onSubmit={async ({ email }) => {
           try {
+            console.log("start");
             setLoading(true);
             const docRef = await addDoc(collection(db, "subscribe-forms"), {
               email,
             });
+            console.log("finish");
             setLoading(false);
             setSubmit(true);
             setTimeout(() => {
               setSubmit(false);
             }, 3000);
           } catch (e) {
+            console.log("error");
+            console.log(e);
             setError(true);
           }
         }}
