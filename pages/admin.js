@@ -1,11 +1,10 @@
 import { collection, getDocs } from "firebase/firestore";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { useRouter } from "next/router";
 import { db } from "../firebase-config";
 
 function admin({ contactForms, subscribeForms }) {
-  const router = useRouter();
   const { data: session } = useSession();
+
   return (
     <>
       <section id="breadcrumbs" className="breadcrumbs">
