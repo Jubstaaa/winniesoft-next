@@ -12,7 +12,13 @@ function WebApp({ webApp }) {
         <section id="project-details" className="project-details">
           <div className="container">
             <div className="row gy-4">
-              <div className="col-lg-8">
+              <div
+                className="col-lg-8"
+                style={{
+                  height: "80vh",
+                  maxHeight: "80vh",
+                }}
+              >
                 <embed
                   src={webApp.homepage}
                   style={{ width: "100%", height: "100%" }}
