@@ -2,7 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { db } from "../firebase-config";
 
-function admin({ contactForms, subscribeForms }) {
+function Admin({ contactForms, subscribeForms }) {
   const { data: session } = useSession();
 
   return (
@@ -82,7 +82,7 @@ function admin({ contactForms, subscribeForms }) {
   );
 }
 
-export default admin;
+export default Admin;
 
 export async function getServerSideProps() {
   const contactForms = [];
