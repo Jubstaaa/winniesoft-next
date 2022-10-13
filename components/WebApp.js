@@ -4,7 +4,7 @@ function WebApp({ webApp }) {
     <div>
       <Head>
         <title>
-          {webApp.name.replace("-", " ")} | Project | Web | Mobile | Game
+          {webApp.name.replace("-", " ")} | Project | Web | Mobile | Game |
           Winniesoft
         </title>
       </Head>

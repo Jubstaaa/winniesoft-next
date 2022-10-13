@@ -18,7 +18,7 @@ function Project(props) {
     <div>
       <Head>
         <title>
-          {project.product_info.title} | Project | Web | Mobile | Game
+          {project.product_info.title} | Project | Web | Mobile | Game |
           Winniesoft
         </title>
         <meta
