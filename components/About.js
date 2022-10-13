@@ -21,20 +21,20 @@ function About() {
                 We make suitable projects according to your wishes. Some people
                 say we do magic. They are not kidding we really do magic. <br />
               </p>
-              <div className="d-flex justify-content-around align-items-center">
-                <h2 className="d-inline">Abracadabra!</h2>
-                <h2 className="d-inline" style={{ fontSize: "4rem" }}>
-                  🪄
-                </h2>
+              <div className="d-flex justify-content-center align-items-center">
+                <h2 className="d-inline">{magic && "Abracadabra!"}</h2>
+
                 <h2
                   className="d-inline"
                   style={{ fontSize: "4rem" }}
                   id="magic"
                   onMouseEnter={() => {
-                    setMagic(true);
-                  }}
-                  onMouseLeave={() => {
-                    setMagic(false);
+                    setTimeout(() => {
+                      setMagic(true);
+                    }, 1000);
+                    setTimeout(() => {
+                      setMagic(false);
+                    }, 4000);
                   }}
                 >
                   {!magic && "🎩"} {magic && "🐰"}

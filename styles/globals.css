@@ -1645,7 +1645,7 @@ section {
 }
 
 img {
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: cover;
 }
@@ -1690,6 +1690,16 @@ html {
 .unity-button {
   cursor: pointer;
 }
-#about {
-  cursor: url("/assets/img/magic-cursor.svg");
+#about .content {
+  cursor: url("/assets/img/magic-cursor.png"), pointer;
+}
+.lighbox-image {
+  cursor: pointer;
+}
+.ril-image-current.ril__image {
+  transform: none !important;
+}
+.ril-zoom-in,
+.ril-zoom-out {
+  display: none;
 }

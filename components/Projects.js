@@ -68,14 +68,14 @@ function Projects({ webApps }) {
                 <img
                   src={app.product_info.thumbnail.replace("s64", "s512")}
                   className="img-fluid"
-                  alt=""
+                  alt={`${app.product_info.title} Project Thumbnail`}
                 />
                 <div className="project-info">
                   <h4>{app.product_info.title}</h4>
                   <p>{app.type}</p>
                   <div className="project-links">
                     <a
-                      onClick={() => router.push(`/${app.name}`)}
+                      onClick={() => router.push(`/${app.name + "#header"}`)}
                       title="More Details"
                     >
                       <i className="mx-2">

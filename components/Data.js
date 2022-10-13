@@ -373,6 +373,7 @@ const cloneGames = [
   {
     name: "snake-clone",
     type: "Clone Game",
+    display: "vertical",
     product_info: {
       title: "Snake Clone",
       authors: [
@@ -390,7 +391,9 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with arrow keys. Press space to restart.",
+      warning: "Only Keyboard",
+      snippet:
+        "How to play: You can change rotation with arrow keys. Press space to restart.",
     },
     categories: [
       {
@@ -401,6 +404,7 @@ const cloneGames = [
   },
   {
     name: "angry-birds-clone",
+    display: "horizontal",
     product_info: {
       title: "Angry Birds Clone",
       authors: [
@@ -418,7 +422,7 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with the mouse.",
+      snippet: "You can play with mouse or touchscreen.",
     },
     categories: [
       {
@@ -429,6 +433,7 @@ const cloneGames = [
   },
   {
     name: "balance-racing-clone",
+    display: "horizontal",
     product_info: {
       title: "Balance Racing Clone",
       authors: [
@@ -446,7 +451,7 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with mouse.",
+      snippet: "You can play with mouse or touchscreen.",
     },
     categories: [
       {
@@ -457,6 +462,7 @@ const cloneGames = [
   },
   {
     name: "zigzag-clone",
+    display: "vertical",
     product_info: {
       title: "ZigZag Clone",
       authors: [
@@ -474,7 +480,7 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can press the button to play.",
+      snippet: "You can play with mouse click or touch to screen.",
     },
     categories: [
       {
@@ -485,6 +491,7 @@ const cloneGames = [
   },
   {
     name: "office-fever-clone",
+    display: "horizontal",
     product_info: {
       title: "Office Fever Clone",
       authors: [
@@ -502,7 +509,8 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with mouse.",
+      snippet:
+        "you can play by holding left mouse click and dragging or using touchscreen",
     },
     categories: [
       {
@@ -513,6 +521,7 @@ const cloneGames = [
   },
   {
     name: "monster-chase-clone",
+    display: "horizontal",
     product_info: {
       title: "Monster Chase Clone",
       authors: [
@@ -530,7 +539,8 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with arrow keys and space.",
+      warning: "Only Keyboard",
+      snippet: "You can move with arrow keys and space for jump.",
     },
     categories: [
       {
@@ -541,6 +551,7 @@ const cloneGames = [
   },
   {
     name: "hyper-drift-clone",
+    display: "horizontal",
     product_info: {
       title: "Hyper Drift Clone",
       authors: [
@@ -558,7 +569,8 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with arrow keys.",
+      warning: "Only Keyboard",
+      snippet: "You can change direction with arrow keys.",
     },
     categories: [
       {
@@ -569,6 +581,7 @@ const cloneGames = [
   },
   {
     name: "helix-jump-clone",
+    display: "vertical",
     product_info: {
       title: "Helix Jump Clone",
       authors: [
@@ -586,7 +599,7 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with mouse.",
+      snippet: "You can play with mouse click or touch to screen.",
     },
     categories: [
       {
@@ -597,6 +610,7 @@ const cloneGames = [
   },
   {
     name: "bullet-rush-clone",
+    display: "vertical",
     product_info: {
       title: "Bullet Rush Clone",
       authors: [
@@ -614,7 +628,8 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with mouse.",
+      snippet:
+        "You can play by holding left mouse click and dragging or using touchscreen",
     },
     categories: [
       {
@@ -625,6 +640,7 @@ const cloneGames = [
   },
   {
     name: "ball-stack-clone",
+    display: "vertical",
     product_info: {
       title: "Ball Stack Clone",
       authors: [
@@ -642,7 +658,8 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with mouse.",
+      snippet:
+        "You can play by holding left mouse click and dragging or using touchscreen",
     },
     categories: [
       {
@@ -653,6 +670,7 @@ const cloneGames = [
   },
   {
     name: "asteroid-clone",
+    display: "horizontal",
     product_info: {
       title: "Asteroid Clone",
       authors: [
@@ -670,7 +688,8 @@ const cloneGames = [
       ],
     },
     about_this_game: {
-      snippet: "You can play with arrow keys and space.",
+      warning: "Only Keyboard",
+      snippet: "You can change direction with arrow keys and fire with space.",
     },
     categories: [
       {

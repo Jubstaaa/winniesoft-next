@@ -4,7 +4,13 @@ import { playApps, cloneGames } from "./Data";
 import Game from "./Game";
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
+import Lightbox from "react-18-image-lightbox";
+import "react-18-image-lightbox/style.css";
+
 function Project(props) {
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   const project =
     playApps.find(({ name }) => name == props.name) ||
     cloneGames.find(({ name }) => name == props.name);
@@ -41,8 +47,25 @@ function Project(props) {
                       swipeable={true}
                       useKeyboardArrows={true}
                     >
+                      <Image
+                        width={450}
+                        height={450}
+                        src={project.product_info.thumbnail.replace(
+                          "s64",
+                          "s512"
+                        )}
+                        alt={`${project.product_info.title} Project Thumbnail`}
+                        loading="lazy"
+                      />
                       {project.media.images.map((item, i) => (
-                        <div key={i}>
+                        <div
+                          key={i}
+                          onClick={() => {
+                            setPhotoIndex(i);
+                            setIsOpen(true);
+                          }}
+                          className={"lighbox-image"}
+                        >
                           <Image
                             width={450}
                             height={800}
@@ -59,11 +82,55 @@ function Project(props) {
                     </Carousel>
                   </div>
                 ) : (
-                  <div className="game w-auto w-100 h-100 position-relative ">
-                    <Game name={props.name} />
+                  <div
+                    className="game m-auto position-relative "
+                    style={
+                      project.display == "vertical"
+                        ? {
+                            height: "528px",
+                            width: "297px",
+                          }
+                        : {
+                            height: "100% !important",
+                            width: "auto !important",
+                          }
+                    }
+                  >
+                    <Game name={props.name} display={project.display} />
                   </div>
                 )}
               </div>
+
+              {isOpen && (
+                <Lightbox
+                  mainSrc={project.media.images[photoIndex]
+                    .replace("w526", "w900")
+                    .replace("h296", "h1600")}
+                  nextSrc={
+                    project.media.images[
+                      (photoIndex + 1) % project.media.images.length
+                    ]
+                  }
+                  prevSrc={
+                    project.media.images[
+                      (photoIndex + project.media.images.length - 1) %
+                        project.media.images.length
+                    ]
+                  }
+                  onCloseRequest={() => setIsOpen(false)}
+                  onMovePrevRequest={() =>
+                    setPhotoIndex(
+                      (photoIndex + project.media.images.length - 1) %
+                        project.media.images.length
+                    )
+                  }
+                  onMoveNextRequest={() =>
+                    setPhotoIndex(
+                      (photoIndex + 1) % project.media.images.length
+                    )
+                  }
+                />
+              )}
 
               <div className="col-lg-4">
                 <div className="project-info">
@@ -101,6 +168,12 @@ function Project(props) {
                 </div>
                 <div className="project-description">
                   <h2>{project.product_info.title}</h2>
+                  {project.about_this_game.warning && (
+                    <div class="alert alert-warning" role="alert">
+                      {project.about_this_game.warning}
+                    </div>
+                  )}
+
                   <p>
                     {project.about_this_game
                       ? project.about_this_game.snippet
