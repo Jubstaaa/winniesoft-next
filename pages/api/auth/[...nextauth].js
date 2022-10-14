@@ -1,5 +1,8 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from "next-auth";
+import { collection, getDocs, addDoc } from "firebase/firestore";
+import { db } from "../../../firebase";
+
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -14,8 +17,8 @@ export const authOptions = {
           email: "admin",
         };
         if (
-          credentials.username == "admin" &&
-          credentials.password == "22cc92f9b"
+          credentials.username == process.env.CREDENTIALS_USERNAME &&
+          credentials.password == process.env.CREDENTIALS_PASSWORD
         ) {
           return user;
         } else {
@@ -27,3 +30,16 @@ export const authOptions = {
   secret: process.env.NEXTAUTH_SECRET,
 };
 export default NextAuth(authOptions);
+
+async function getServerSideProps() {
+  const admin = [];
+
+  const adminRef = await getDocs(collection(db, "admin"));
+  adminRef.forEach((doc) => {
+    admin.push(doc.data());
+  });
+  console.log(admin);
+  return {
+    props: { admin },
+  };
+}
