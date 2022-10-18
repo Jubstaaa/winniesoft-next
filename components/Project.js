@@ -26,7 +26,6 @@ function Project(props) {
       {!project && <div></div>}
       {project && (
         <>
-          {" "}
           <Head>
             <title>
               {project.product_info.title} | Project | Web | Mobile | Game |
