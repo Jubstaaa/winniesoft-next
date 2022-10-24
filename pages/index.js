@@ -37,7 +37,9 @@ export async function getServerSideProps() {
   const request = await fetch(
     "https://api.github.com/users/Jubstaaa/repos"
   ).then((response) => response.json());
-  const webApps = request.filter((item) => item.language == "JavaScript");
+  const webApps = request.filter(
+    (item) => item.language == "JavaScript" || item.language == "TypeScript"
+  );
 
   return {
     props: {

@@ -1,13 +1,12 @@
 import { playApps, cloneGames } from "./Data";
 import { UilLink } from "@iconscout/react-unicons";
-import { useRouter } from "next/router";
 import { useState } from "react";
 import { useEffect } from "react";
+import Link from "next/link";
 function Projects({ webApps }) {
   const resultAll = [...playApps, ...cloneGames];
   const [result, setResult] = useState(playApps);
   const [webResult, setWebResult] = useState([]);
-  const router = useRouter();
   let filters = ["Mobile Game / App", "Clone Game", "Web App"];
 
   useEffect(() => {
@@ -74,15 +73,14 @@ function Projects({ webApps }) {
                   <h4>{app.product_info.title}</h4>
                   <p>{app.type}</p>
                   <div className="project-links">
-                    <a
-                      onClick={() => router.push(`/${app.name + "#header"}`)}
-                      title="More Details"
-                    >
-                      <i className="mx-2">
-                        <UilLink />
-                      </i>
-                      More
-                    </a>
+                    <Link href={`/${app.name + "#header"}`}>
+                      <a title="More Details">
+                        <i className="mx-2">
+                          <UilLink />
+                        </i>
+                        More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -109,17 +107,14 @@ function Projects({ webApps }) {
                   </h4>
                   <p>Web App</p>
                   <div className="project-links">
-                    <a
-                      onClick={() =>
-                        router.push(`/${webApp.name.toLowerCase()}`)
-                      }
-                      title="More Details"
-                    >
-                      <i className="mx-2">
-                        <UilLink />
-                      </i>
-                      More
-                    </a>
+                    <Link href={`/${webApp.name.toLowerCase()}#header`}>
+                      <a title="More Details">
+                        <i className="mx-2">
+                          <UilLink />
+                        </i>
+                        More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
