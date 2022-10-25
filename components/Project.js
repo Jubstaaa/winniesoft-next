@@ -179,11 +179,12 @@ function Project(props) {
                     </div>
                     <div className="project-description">
                       <h2>{project.product_info.title}</h2>
-                      {project.about_this_game.warning && (
-                        <div class="alert alert-warning" role="alert">
-                          {project.about_this_game.warning}
-                        </div>
-                      )}
+                      {project.about_this_game &&
+                        project.about_this_game.warning && (
+                          <div class="alert alert-warning" role="alert">
+                            {project.about_this_game.warning}
+                          </div>
+                        )}
 
                       <p>
                         {project.about_this_game
