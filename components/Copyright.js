@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Socials from "./Socials";
 
 function Copyright() {
@@ -10,6 +11,11 @@ function Copyright() {
             <span>Winniesoft</span>
           </strong>
           . All Rights Reserved
+        </div>
+        <div class="credits">
+          <Link href={"/privacy-policy"}>
+            <a>Privacy Policy</a>
+          </Link>
         </div>
       </div>
       <Socials />
