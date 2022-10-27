@@ -368,6 +368,96 @@ const playApps = [
       },
     ],
   },
+  {
+    name: "hyper-shooter",
+    type: "Mobile Game / App",
+    search_metadata: {
+      id: "635a290a3d691987f591a087",
+      status: "Success",
+      json_endpoint:
+        "https://serpapi.com/searches/51b263e06fc1c399/635a290a3d691987f591a087.json",
+      created_at: "2022-10-27 06:45:30 UTC",
+      processed_at: "2022-10-27 06:45:30 UTC",
+      google_play_product_url:
+        "https://play.google.com/store/apps/details?id=com.winniesoft.HyperShooter&hl=en&gl=us",
+      raw_html_file:
+        "https://serpapi.com/searches/51b263e06fc1c399/635a290a3d691987f591a087.html",
+      total_time_taken: 0.79,
+    },
+    search_parameters: {
+      engine: "google_play_product",
+      product_id: "com.winniesoft.HyperShooter",
+      hl: "en",
+      gl: "us",
+      store: "apps",
+    },
+    product_info: {
+      title: "Hyper Shooter",
+      authors: [
+        {
+          name: "WinnieSoft",
+          link: "https://play.google.com/store/apps/dev?id=8459739707142059323",
+        },
+      ],
+      extensions: ["Contains ads"],
+      content_rating: {
+        text: "Everyone",
+        thumbnail:
+          "https://play-lh.googleusercontent.com/IciOnDFecb5Xt50Q2jlcNC0LPI7LEGxNojroo-s3AozcyS-vDCwtq4fn7u3wZmRna8OewG9PBrWC-i7i=w48-h16-rw",
+      },
+      downloads: "0+",
+      thumbnail:
+        "https://play-lh.googleusercontent.com/c5Yw_w5EXiCZuEy5CPLEhIs-uP997YGYq8QoFJdvbDjJ0zaY5QmeUYEBRKr88sZPFg=w240-h480-rw",
+      offers: [
+        {
+          text: "Install",
+          link: "https://play.google.com/store/apps/details?id=com.winniesoft.HyperShooter&rdid=com.winniesoft.HyperShooter&feature=md&offerId",
+        },
+      ],
+    },
+    media: {
+      images: [
+        "https://play-lh.googleusercontent.com/xFRlUUNPnQUY0WQbM6LkNRm8trj97TFHxGOGpIbt1JTTnpIQvKPfTYp7CjwOVGJMvOU=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/KXyaYsHrr_f4INAxJGW5eXYrYxxJe126E-rt8eVxd1sLxlK2ShLYDY8PTQ1H-nvYNVM=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/lQZUY8lYZYi5GqSGnCka_za3YCTvnMBb5m6fcDTToxMNkkWE-Hcg0aGJIDNuRBHrhhU=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/7RS8cnCKf41kAhqDCcLCdwC79J-MIunW-Wkxowets6qfJ7duWNU2wf-_NMv0KWd1DIU=w526-h296-rw",
+      ],
+    },
+    about_this_game: {
+      snippet:
+        "The main goal of the game is to aim to get ball through the hoop in a simple and easy way. Each point will earn you more points and you will start playingChallenge yourself and your friends with this highly addictive and fun game. Pass the balls through the hoop to earn points and move on to the next level. The game is very suitable for players of all ages.Throw the balls into the circle so that the circle is filled with balls! Use your finger to aim.Play Hyper Shooter, a game that combines the fun of throwing balls and being in a 3D environment. You will have many exciting levels to beat.3D, fun and relaxing ball throwing game. There are many balls in each level. Your task is to get the balls through the hoop. After completing the points by passing the balls through the hoop, you can move on to the next level.",
+    },
+    categories: [
+      {
+        name: "Casual",
+        link: "https://play.google.com/store/apps/category/GAME_CASUAL",
+        category_id: "GAME_CASUAL",
+        serpapi_link:
+          "https://serpapi.com/search.json?apps_category=GAME_CASUAL&engine=google_play&gl=us&hl=en&store=apps",
+      },
+    ],
+    updated_on: "Oct 26, 2022",
+    data_safety: [
+      {
+        text: "No data shared with third parties",
+        subtext: "Learn more about how developers declare sharing",
+        link: "https://support.google.com/googleplay?p=data-safety&hl=en",
+      },
+      {
+        text: "No data collected",
+        subtext: "Learn more about how developers declare collection",
+        link: "https://support.google.com/googleplay?p=data-safety&hl=en",
+      },
+    ],
+    what_s_new: {
+      snippet: "Hyper Shoore is Live!",
+    },
+    developer_contact: {
+      website: "https://www.winniesoft.com/",
+      email: "info@winniesoft.com",
+      privacy_policy: "https://www.winniesoft.com/privacy-policy",
+    },
+  },
 ];
 const cloneGames = [
   {
