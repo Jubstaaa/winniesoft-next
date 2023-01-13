@@ -793,7 +793,7 @@ const cloneGames = [
 const team = [
   {
     name: "İlker Balcılar",
-    title: "Web Developer",
+    title: "Frontend Developer",
     image: "https://avatars.githubusercontent.com/u/9998250?v=4",
     socials: {
       instagram: "https://www.instagram.com/jubstaa/",
