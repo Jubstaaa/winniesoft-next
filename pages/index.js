@@ -35,7 +35,7 @@ export default function Home({ webApps }) {
 
 export async function getServerSideProps() {
   const request = await fetch(
-    "https://api.github.com/users/Jubstaaa/repos"
+    "https://api.github.com/users/Jubstaaa/repos?sort=updated&direction=desc"
   ).then((response) => response.json());
   const webApps = request.filter(
     (item) => item.language == "JavaScript" || item.language == "TypeScript"
