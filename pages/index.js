@@ -6,7 +6,7 @@ import Services from "../components/Services";
 import Projects from "../components/Projects";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
-import i18n from "./i18n";
+import i18n from "../components/i18n";
 
 export default function Home({ webApps }) {
   return (
