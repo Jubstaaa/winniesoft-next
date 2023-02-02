@@ -12,7 +12,7 @@ function Copyright() {
           </strong>
           . All Rights Reserved
         </div>
-        <div class="credits">
+        <div className="credits">
           <Link href={"/privacy-policy"}>
             <a>Privacy Policy</a>
           </Link>

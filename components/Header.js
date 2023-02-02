@@ -2,10 +2,17 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { UilBars, UilMultiply } from "@iconscout/react-unicons";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t, i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const router = useRouter();
+
+  const languageHandle = async (lang) => {
+    await i18n.changeLanguage(lang);
+  };
+
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between">
@@ -34,7 +41,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                Home
+                {t("home")}
               </a>
             </li>
             <li>
@@ -45,7 +52,7 @@ function Header() {
                 }}
                 className="nav-link scrollto"
               >
-                About
+                {t("about")}
               </a>
             </li>
             <li>
@@ -56,7 +63,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                Services
+                {t("services")}
               </a>
             </li>
             <li>
@@ -67,7 +74,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                Projects
+                {t("projects")}
               </a>
             </li>
             <li>
@@ -78,7 +85,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                Team
+                {t("team")}
               </a>
             </li>
 
@@ -90,8 +97,26 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                Contact
+                {t("contact")}
               </a>
+            </li>
+            <li className="dropdown">
+              <a href="#">
+                <span> {t("language")}</span>
+                <i className="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="#" onClick={() => languageHandle("en")}>
+                    {t("english")}
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={() => languageHandle("tr")}>
+                    {t("turkish")}
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
           <i
