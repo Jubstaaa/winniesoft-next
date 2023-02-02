@@ -181,7 +181,7 @@ h6 {
   font-family: "Krub", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #2d405f;
+  color: #2d405f !important;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -197,7 +197,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #60caff;
+  color: #60caff !important;
 }
 
 .navbar .getstarted,
