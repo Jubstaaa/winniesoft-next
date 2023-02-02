@@ -9,7 +9,9 @@ import Lightbox from "react-18-image-lightbox";
 import "react-18-image-lightbox/style.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 function Project(props) {
+  const { t, i18n } = useTranslation();
   const router = useRouter();
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -144,14 +146,14 @@ function Project(props) {
 
                   <div className="col-lg-4">
                     <div className="project-info">
-                      <h3>Project information</h3>
+                      <h3>{t("singleProjectTitle")}</h3>
                       <ul>
                         <li>
-                          <strong>Category</strong>:{" "}
+                          <strong>{t("singleProjectCategory")}</strong>:{" "}
                           {project.categories[0].name}
                         </li>
                         <li>
-                          <strong>Owner</strong>:{" "}
+                          <strong>{t("singleProjectOwner")}</strong>:{" "}
                           <a
                             href={project.product_info.authors[0].link}
                             target="_blank"
@@ -162,10 +164,11 @@ function Project(props) {
                           </a>
                         </li>
                         <li>
-                          <strong>Project date</strong>: {project.updated_on}
+                          <strong>{t("singleProjectDate")}</strong>:{" "}
+                          {project.updated_on}
                         </li>
                         <li>
-                          <strong>Project URL</strong>:
+                          <strong>{t("singleProjectUrl")}</strong>:
                           <a
                             href={project.product_info.offers[0].link}
                             target="_blank"

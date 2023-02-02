@@ -3,16 +3,16 @@ import {
   UilMobileAndroid,
   UilBrowser,
 } from "@iconscout/react-unicons";
+import { useTranslation } from "react-i18next";
+
 function Services() {
+  const { t, i18n } = useTranslation();
   return (
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Services</h2>
-          <p>
-            We are working hard to give you best service. We work with the most
-            up-to-date technologies and best solution partners.
-          </p>
+          <h2>{t("servicesTitle")}</h2>
+          <p>{t("servicesDesc")}</p>
         </div>
 
         <div className="row align-items-center justify-content-center">
@@ -26,12 +26,9 @@ function Services() {
                 <UilPlayCircle />
               </div>
               <h4 className="title">
-                <a href="#portfolio">Game Development</a>
+                <a href="#portfolio">{t("servicesBox1Title")}</a>
               </h4>
-              <p className="description">
-                We develop games suitable for every platform according to your
-                wishes.
-              </p>
+              <p className="description">{t("servicesBox1Desc")}</p>
             </div>
           </div>
 
@@ -45,11 +42,9 @@ function Services() {
                 <UilMobileAndroid />
               </div>
               <h4 className="title">
-                <a href="#portfolio">Mobile App Development</a>
+                <a href="#portfolio">{t("servicesBox2Title")}</a>
               </h4>
-              <p className="description">
-                We develop mobile applications according to your wishes
-              </p>
+              <p className="description">{t("servicesBox2Desc")}</p>
             </div>
           </div>
 
@@ -63,11 +58,9 @@ function Services() {
                 <UilBrowser />
               </div>
               <h4 className="title">
-                <a href="#portfolio">Web Development</a>
+                <a href="#portfolio">{t("servicesBox3Title")}</a>
               </h4>
-              <p className="description">
-                We make fast, responsive, dynamic web apps and sites.
-              </p>
+              <p className="description">{t("servicesBox3Desc")}</p>
             </div>
           </div>
         </div>

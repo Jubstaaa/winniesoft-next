@@ -5,16 +5,16 @@ import {
   UilLinkedin,
   UilGithub,
 } from "@iconscout/react-unicons";
+import { useTranslation } from "react-i18next";
+
 function Team() {
+  const { t, i18n } = useTranslation();
   return (
     <section id="team" className="team">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Team</h2>
-          <p>
-            Meet our team who are experienced in their fields and constantly
-            improve themselves.
-          </p>
+          <h2>{t("teamTitle")}</h2>
+          <p>{t("teamDesc")}</p>
         </div>
 
         <div className="row justify-content-center align-items-center">

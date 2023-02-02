@@ -1,7 +1,9 @@
 import { UilAngleRightB } from "@iconscout/react-unicons";
 import Copyright from "./Copyright";
 import SubscribeForm from "./SubscribeForm";
+import { useTranslation } from "react-i18next";
 function Footer() {
+  const { t, i18n } = useTranslation();
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -10,39 +12,39 @@ function Footer() {
             <div className="col-lg-4 col-md-6 footer-contact">
               <h3>Winniesoft</h3>
               <p>
-                <strong>Address:</strong>
-                Not Yet 😔
+                <strong>{t("contactAddressTitle")}:</strong>
+                {t("contactEmpty")}
                 <br />
-                <strong>Phone:</strong> Not Yet 😔
+                <strong>{t("contactPhone")}:</strong> {t("contactEmpty")}
                 <br />
-                <strong>Email:</strong> info@winniesoft.com
+                <strong>{t("contactEmail")}:</strong> info@winniesoft.com
                 <br />
               </p>
             </div>
 
             <div className="col-lg-4 col-md-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>{t("servicesTitle")}</h4>
               <ul>
                 <li>
                   <i>
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">Game Development</a>
+                  <a href="#services">{t("servicesBox1Title")}</a>
                 </li>
                 <li>
                   <i>
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">Mobile App Development</a>
+                  <a href="#services">{t("servicesBox2Title")}</a>
                 </li>
                 <li>
                   <i>
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">Web Development</a>
+                  <a href="#services">{t("servicesBox3Title")}</a>
                 </li>
               </ul>
             </div>

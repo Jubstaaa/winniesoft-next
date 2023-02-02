@@ -5,7 +5,10 @@ import {
   UilLifeRing,
   UilFolderCheck,
 } from "@iconscout/react-unicons";
+import { useTranslation } from "react-i18next";
+
 function About() {
+  const { t, i18n } = useTranslation();
   const [magic, setMagic] = useState(false);
   return (
     <section id="about" className="about">
@@ -16,10 +19,10 @@ function About() {
             data-aos="fade-right"
           >
             <div className="content">
-              <h3>What are we doing?</h3>
+              <h3> {t("aboutTitle")}</h3>
               <p>
-                We make suitable projects according to your wishes. Some people
-                say we do magic. They are not kidding we really do magic. <br />
+                {t("aboutDesc")}
+                <br />
               </p>
               <div className="text-center">
                 <div
@@ -58,11 +61,8 @@ function About() {
                   <i>
                     <UilFolderCheck />
                   </i>
-                  <h4>Project based work</h4>
-                  <p>
-                    Our priority is your project. We do our work as quickly as
-                    possible.
-                  </p>
+                  <h4> {t("aboutBox1Title")}</h4>
+                  <p>{t("aboutBox1Desc")}</p>
                 </div>
                 <div
                   className="col-md-6 icon-box"
@@ -72,11 +72,8 @@ function About() {
                   <i>
                     <UilBracketsCurly />
                   </i>
-                  <h4>Current Technologies</h4>
-                  <p>
-                    We use the most up-to-date structures and frameworks for
-                    your systems.
-                  </p>
+                  <h4> {t("aboutBox2Title")}</h4>
+                  <p>{t("aboutBox2Desc")}</p>
                 </div>
                 <div
                   className="col-md-6 icon-box"
@@ -86,8 +83,8 @@ function About() {
                   <i>
                     <UilCommentsAlt />
                   </i>
-                  <h4>Continuous communication</h4>
-                  <p>You can contact us directly during the process.</p>
+                  <h4> {t("aboutBox3Title")}</h4>
+                  <p>{t("aboutBox3Desc")}</p>
                 </div>
                 <div
                   className="col-md-6 icon-box"
@@ -97,11 +94,8 @@ function About() {
                   <i>
                     <UilLifeRing />
                   </i>
-                  <h4>Post-project support</h4>
-                  <p>
-                    We provide support after your project and accept your
-                    revisions.
-                  </p>
+                  <h4> {t("aboutBox4Title")}</h4>
+                  <p>{t("aboutBox4Desc")}</p>
                 </div>
               </div>
             </div>

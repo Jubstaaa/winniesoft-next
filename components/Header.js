@@ -3,11 +3,13 @@ import Image from "next/image";
 import { UilBars, UilMultiply } from "@iconscout/react-unicons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { UilAngleDown } from "@iconscout/react-unicons";
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const router = useRouter();
+  const [dropdownActive, setDropdownActive] = useState(false);
 
   const languageHandle = async (lang) => {
     await i18n.changeLanguage(lang);
@@ -101,20 +103,20 @@ function Header() {
               </a>
             </li>
             <li className="dropdown">
-              <a href="#">
+              <a
+                onClick={() =>
+                  setDropdownActive((currentState) => !currentState)
+                }
+              >
                 <span> {t("language")}</span>
-                <i className="bi bi-chevron-down"></i>
+                <UilAngleDown />
               </a>
-              <ul>
+              <ul className={`${dropdownActive && "dropdown-active"}`}>
                 <li>
-                  <a href="#" onClick={() => languageHandle("en")}>
-                    {t("english")}
-                  </a>
+                  <a onClick={() => languageHandle("en")}>{t("english")}</a>
                 </li>
                 <li>
-                  <a href="#" onClick={() => languageHandle("tr")}>
-                    {t("turkish")}
-                  </a>
+                  <a onClick={() => languageHandle("tr")}>{t("turkish")}</a>
                 </li>
               </ul>
             </li>
