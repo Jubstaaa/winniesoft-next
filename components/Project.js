@@ -57,7 +57,7 @@ function Project(props) {
                           swipeable={true}
                           useKeyboardArrows={true}
                         >
-                          <Image
+                          {/* <Image
                             width={450}
                             height={450}
                             src={project.product_info.thumbnail.replace(
@@ -66,7 +66,7 @@ function Project(props) {
                             )}
                             alt={`${project.product_info.title} Project Thumbnail`}
                             loading="lazy"
-                          />
+                          /> */}
                           {project.media.images.map((item, i) => (
                             <div
                               key={i}
