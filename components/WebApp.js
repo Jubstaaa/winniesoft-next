@@ -1,7 +1,5 @@
 import Head from "next/head";
-import { useTranslation } from "react-i18next";
 function WebApp({ webApp }) {
-  const { t, i18n } = useTranslation();
   return (
     <div>
       <Head>
@@ -33,14 +31,13 @@ function WebApp({ webApp }) {
 
               <div className="col-lg-4">
                 <div className="project-info">
-                  <h3>{t("singleProjectTitle")}</h3>
+                  <h3>Project information</h3>
                   <ul>
                     <li>
-                      <strong>{t("singleProjectCategory")}</strong>:{" "}
-                      {t("projectsCategory3")}
+                      <strong>Category</strong>: Web App
                     </li>
                     <li>
-                      <strong>{t("singleProjectOwner")}</strong>:{" "}
+                      <strong>Owner</strong>:{" "}
                       <a
                         href={webApp.owner.html_url}
                         target="_blank"
@@ -51,11 +48,11 @@ function WebApp({ webApp }) {
                       </a>
                     </li>
                     <li>
-                      <strong>{t("singleProjectDate")}</strong>:{" "}
+                      <strong>Project date</strong>:{" "}
                       {webApp.pushed_at.slice(0, webApp.pushed_at.indexOf("T"))}
                     </li>
                     <li>
-                      <strong>{t("singleProjectUrl")}</strong>:
+                      <strong>Project URL</strong>:
                       <a
                         href={webApp.html_url}
                         target="_blank"
@@ -66,7 +63,7 @@ function WebApp({ webApp }) {
                       </a>
                     </li>
                     <li>
-                      <strong>{t("singleProjectDemo")}</strong>:
+                      <strong>Project Demo</strong>:
                       <a
                         href={webApp.homepage}
                         target="_blank"
@@ -86,9 +83,7 @@ function WebApp({ webApp }) {
                         letter.toUpperCase()
                       )}
                   </h2>
-                  <p>
-                    {webApp.language} {t("singleProjectDesc")}
-                  </p>
+                  <p>{webApp.language} App</p>
                 </div>
               </div>
             </div>

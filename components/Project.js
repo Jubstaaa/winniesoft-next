@@ -9,9 +9,7 @@ import Lightbox from "react-18-image-lightbox";
 import "react-18-image-lightbox/style.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
 function Project(props) {
-  const { t, i18n } = useTranslation();
   const router = useRouter();
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +57,7 @@ function Project(props) {
                           swipeable={true}
                           useKeyboardArrows={true}
                         >
-                          {/* <Image
+                          <Image
                             width={450}
                             height={450}
                             src={project.product_info.thumbnail.replace(
@@ -68,7 +66,7 @@ function Project(props) {
                             )}
                             alt={`${project.product_info.title} Project Thumbnail`}
                             loading="lazy"
-                          /> */}
+                          />
                           {project.media.images.map((item, i) => (
                             <div
                               key={i}
@@ -146,14 +144,14 @@ function Project(props) {
 
                   <div className="col-lg-4">
                     <div className="project-info">
-                      <h3>{t("singleProjectTitle")}</h3>
+                      <h3>Project information</h3>
                       <ul>
                         <li>
-                          <strong>{t("singleProjectCategory")}</strong>:{" "}
+                          <strong>Category</strong>:{" "}
                           {project.categories[0].name}
                         </li>
                         <li>
-                          <strong>{t("singleProjectOwner")}</strong>:{" "}
+                          <strong>Owner</strong>:{" "}
                           <a
                             href={project.product_info.authors[0].link}
                             target="_blank"
@@ -164,11 +162,10 @@ function Project(props) {
                           </a>
                         </li>
                         <li>
-                          <strong>{t("singleProjectDate")}</strong>:{" "}
-                          {project.updated_on}
+                          <strong>Project date</strong>: {project.updated_on}
                         </li>
                         <li>
-                          <strong>{t("singleProjectUrl")}</strong>:
+                          <strong>Project URL</strong>:
                           <a
                             href={project.product_info.offers[0].link}
                             target="_blank"

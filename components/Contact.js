@@ -4,15 +4,13 @@ import {
   UilPhoneVolume,
 } from "@iconscout/react-unicons";
 import ContactForm from "./ContactForm";
-import { useTranslation } from "react-i18next";
 
 function Contact() {
-  const { t, i18n } = useTranslation();
   return (
     <section id="contact" className="contact section-bg">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>{t("contactTitle")}</h2>
+          <h2>Contact</h2>
         </div>
 
         <div className="row">
@@ -24,8 +22,8 @@ function Contact() {
                     <UilMapMarker />
                   </i>
 
-                  <h3>{t("contactAddressTitle")}</h3>
-                  <p>{t("contactEmpty")}</p>
+                  <h3>Our Address</h3>
+                  <p>Not Yet 😔</p>
                 </div>
               </div>
               <div className="col-md-6">
@@ -33,7 +31,7 @@ function Contact() {
                   <i>
                     <UilEnvelope />
                   </i>
-                  <h3>{t("contactEmail")}</h3>
+                  <h3>Email Us</h3>
                   <p>info@winniesoft.com</p>
                 </div>
               </div>
@@ -42,8 +40,8 @@ function Contact() {
                   <i>
                     <UilPhoneVolume />
                   </i>
-                  <h3>{t("contactPhone")}</h3>
-                  <p>{t("contactEmpty")}</p>
+                  <h3>Call Us</h3>
+                  <p>Not Yet 😔</p>
                 </div>
               </div>
             </div>

@@ -1,9 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import { useTranslation } from "react-i18next";
-
 function Hero() {
-  const { t, i18n } = useTranslation();
-
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
@@ -13,11 +9,11 @@ function Hero() {
         >
           <TypeAnimation
             sequence={[
-              t("heroTitle1"),
+              "We Make Original Things",
               2000,
-              t("heroTitle2"),
+              "We Make Fun Things",
               2000,
-              t("heroTitle3"),
+              "We Make Creative Things",
               2000,
             ]}
             wrapper="h1"
@@ -25,9 +21,9 @@ function Hero() {
             repeat={Infinity}
             style={{ fontSize: "3em" }}
           />
-          <h2>{t("heroDesc")}</h2>
+          <h2>We are team of talented developers making nice softwares.</h2>
           <a href="#about" className="btn-get-started ">
-            {t("heroButton")}
+            Get Started
           </a>
           <img
             src="assets/img/hero-img.png"

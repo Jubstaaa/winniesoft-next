@@ -2,19 +2,10 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { UilBars, UilMultiply } from "@iconscout/react-unicons";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { UilAngleDown } from "@iconscout/react-unicons";
 
 function Header() {
-  const { t, i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const router = useRouter();
-  const [dropdownActive, setDropdownActive] = useState(false);
-
-  const languageHandle = async (lang) => {
-    await i18n.changeLanguage(lang);
-  };
-
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between">
@@ -43,7 +34,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                {t("home")}
+                Home
               </a>
             </li>
             <li>
@@ -54,7 +45,7 @@ function Header() {
                 }}
                 className="nav-link scrollto"
               >
-                {t("about")}
+                About
               </a>
             </li>
             <li>
@@ -65,7 +56,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                {t("services")}
+                Services
               </a>
             </li>
             <li>
@@ -76,7 +67,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                {t("projects")}
+                Projects
               </a>
             </li>
             <li>
@@ -87,7 +78,7 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                {t("team")}
+                Team
               </a>
             </li>
 
@@ -99,26 +90,8 @@ function Header() {
                   setShowMenu(false);
                 }}
               >
-                {t("contact")}
+                Contact
               </a>
-            </li>
-            <li className="dropdown">
-              <a
-                onClick={() =>
-                  setDropdownActive((currentState) => !currentState)
-                }
-              >
-                <span> {t("language")}</span>
-                <UilAngleDown />
-              </a>
-              <ul className={`${dropdownActive && "dropdown-active"}`}>
-                <li>
-                  <a onClick={() => languageHandle("en")}>{t("english")}</a>
-                </li>
-                <li>
-                  <a onClick={() => languageHandle("tr")}>{t("turkish")}</a>
-                </li>
-              </ul>
             </li>
           </ul>
           <i

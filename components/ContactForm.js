@@ -2,10 +2,8 @@ import { Formik } from "formik";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 function ContactForm() {
-  const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState(false);
@@ -47,7 +45,7 @@ function ContactForm() {
                   name="name"
                   className="form-control"
                   id="name"
-                  placeholder={t("contactFormName")}
+                  placeholder="Your Name"
                   required
                   onChange={handleChange}
                   value={values.name}
@@ -59,7 +57,7 @@ function ContactForm() {
                   className="form-control"
                   name="email"
                   id="email"
-                  placeholder={t("contactFormEmail")}
+                  placeholder="Your Email"
                   required
                   onChange={handleChange}
                   value={values.email}
@@ -72,7 +70,7 @@ function ContactForm() {
                 className="form-control"
                 name="subject"
                 id="subject"
-                placeholder={t("contactFormSubject")}
+                placeholder="Subject"
                 required
                 onChange={handleChange}
                 value={values.subject}
@@ -83,25 +81,27 @@ function ContactForm() {
                 className="form-control"
                 name="message"
                 rows="5"
-                placeholder={t("contactFormMessage")}
+                placeholder="Message"
                 required
                 onChange={handleChange}
                 value={values.message}
               ></textarea>
             </div>
             <div className="my-3">
-              {loading && (
-                <div className="loading">{t("contactFormLoading")}</div>
-              )}
+              {loading && <div className="loading">Loading</div>}
               {error && (
-                <div className="error-message">{t("contactFormError")}</div>
+                <div className="error-message">
+                  Your message could not be sent. Please try again.
+                </div>
               )}
               {submit && (
-                <div className="sent-message">{t("contactFormSuccess")}</div>
+                <div className="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
               )}
             </div>
             <div className="text-center">
-              <button type="submit">{t("contactFormButton")}</button>
+              <button type="submit">Send Message</button>
             </div>
           </form>
         )}

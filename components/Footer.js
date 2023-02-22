@@ -1,9 +1,7 @@
 import { UilAngleRightB } from "@iconscout/react-unicons";
 import Copyright from "./Copyright";
 import SubscribeForm from "./SubscribeForm";
-import { useTranslation } from "react-i18next";
 function Footer() {
-  const { t, i18n } = useTranslation();
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -12,39 +10,39 @@ function Footer() {
             <div className="col-lg-4 col-md-6 footer-contact">
               <h3>Winniesoft</h3>
               <p>
-                <strong>{t("contactAddressTitle")}:</strong>
-                {t("contactEmpty")}
+                <strong>Address:</strong>
+                Not Yet 😔
                 <br />
-                <strong>{t("contactPhone")}:</strong> {t("contactEmpty")}
+                <strong>Phone:</strong> Not Yet 😔
                 <br />
-                <strong>{t("contactEmail")}:</strong> info@winniesoft.com
+                <strong>Email:</strong> info@winniesoft.com
                 <br />
               </p>
             </div>
 
             <div className="col-lg-4 col-md-6 footer-links">
-              <h4>{t("servicesTitle")}</h4>
+              <h4>Our Services</h4>
               <ul>
                 <li>
                   <i>
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">{t("servicesBox1Title")}</a>
+                  <a href="#services">Game Development</a>
                 </li>
                 <li>
                   <i>
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">{t("servicesBox2Title")}</a>
+                  <a href="#services">Mobile App Development</a>
                 </li>
                 <li>
                   <i>
                     {" "}
                     <UilAngleRightB />
                   </i>{" "}
-                  <a href="#services">{t("servicesBox3Title")}</a>
+                  <a href="#services">Web Development</a>
                 </li>
               </ul>
             </div>

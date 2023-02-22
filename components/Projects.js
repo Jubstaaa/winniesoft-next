@@ -3,18 +3,11 @@ import { UilLink } from "@iconscout/react-unicons";
 import { useState } from "react";
 import { useEffect } from "react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
-
 function Projects({ webApps }) {
-  const { t, i18n } = useTranslation();
   const resultAll = [...playApps, ...cloneGames];
   const [result, setResult] = useState(playApps);
   const [webResult, setWebResult] = useState([]);
-  let filters = [
-    t("projectsCategory1"),
-    t("projectsCategory2"),
-    t("projectsCategory3"),
-  ];
+  let filters = ["Mobile Game / App", "Clone Game", "Web App"];
 
   useEffect(() => {
     document
@@ -26,16 +19,14 @@ function Projects({ webApps }) {
     e.preventDefault();
 
     setResult(
-      e.target.innerHTML === t("projectsCategory1")
+      e.target.innerHTML === "Mobile Game / App"
         ? [...playApps]
-        : e.target.innerHTML === t("projectsCategory2")
+        : e.target.innerHTML === "Clone Game"
         ? [...cloneGames]
         : []
     );
 
-    setWebResult(
-      e.target.innerHTML === t("projectsCategory3") ? [...webApps] : []
-    );
+    setWebResult(e.target.innerHTML === "Web App" ? [...webApps] : []);
 
     document.querySelectorAll("#project-flters li").forEach((filter) => {
       filter.classList.remove("filter-active");
@@ -47,8 +38,11 @@ function Projects({ webApps }) {
     <section id="project" className="project">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2> {t("projectsTitle")}</h2>
-          <p>{t("projectsDesc")}</p>
+          <h2>Projects</h2>
+          <p>
+            You can review the projects we have made, view source codes of
+            public ones, try and play demos.
+          </p>
         </div>
 
         <div className="row">
@@ -84,7 +78,7 @@ function Projects({ webApps }) {
                         <i className="mx-2">
                           <UilLink />
                         </i>
-                        {t("projectsMore")}
+                        More
                       </a>
                     </Link>
                   </div>
@@ -111,14 +105,14 @@ function Projects({ webApps }) {
                         letter.toUpperCase()
                       )}
                   </h4>
-                  <p> {t("projectsCategory3")}</p>
+                  <p>Web App</p>
                   <div className="project-links">
                     <Link href={`/${webApp.name.toLowerCase()}#header`}>
                       <a title="More Details">
                         <i className="mx-2">
                           <UilLink />
                         </i>
-                        {t("projectsMore")}
+                        More
                       </a>
                     </Link>
                   </div>

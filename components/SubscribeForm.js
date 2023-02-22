@@ -2,18 +2,16 @@ import { Formik } from "formik";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 function SubscribeForm() {
-  const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState(false);
 
   return (
     <div className="col-lg-4 col-md-6 footer-newsletter form">
-      <h4>{t("footerNewsletterTitle")}</h4>
-      <p>{t("footerNewsletterDesc")}</p>
+      <h4>Join Our Newsletter</h4>
+      <p>Stay in tune with our latest projects.</p>
       <Formik
         initialValues={{
           email: "",
@@ -47,16 +45,20 @@ function SubscribeForm() {
               onChange={handleChange}
               value={values.email}
             />
-            <input type="submit" value={t("footerNewsletterButton")} />
+            <input type="submit" value="Subscribe" />
           </form>
         )}
       </Formik>
-      {loading && <div className="loading my-2">{t("contactFormLoading")}</div>}
+      {loading && <div className="loading my-2">Loading</div>}
       {error && (
-        <div className="error-message my-2">{t("contactFormError")}</div>
+        <div className="error-message my-2">
+          Your message could not be sent. Please try again.
+        </div>
       )}
       {submit && (
-        <div className="sent-message my-2">{t("contactFormSuccess")}</div>
+        <div className="sent-message my-2">
+          Your message has been sent. Thank you!
+        </div>
       )}
     </div>
   );
