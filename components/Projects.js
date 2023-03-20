@@ -100,7 +100,7 @@ function Projects({ webApps }) {
                 <div className="project-info">
                   <h4>
                     {webApp.name
-                      .replace("-", " ")
+                      .replaceAll("-", " ")
                       .replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
                         letter.toUpperCase()
                       )}
