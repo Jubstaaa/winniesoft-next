@@ -5,7 +5,7 @@ function WebApp({ webApp }) {
       <Head>
         <title>
           {webApp.name
-            .replace("-", " ")
+            .replaceAll("-", " ")
             .replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
               letter.toUpperCase()
             )}{" "}
