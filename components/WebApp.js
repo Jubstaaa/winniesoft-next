@@ -78,7 +78,7 @@ function WebApp({ webApp }) {
                 <div className="project-description">
                   <h2>
                     {webApp.name
-                      .replace("-", " ")
+                      .replaceAll("-", " ")
                       .replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
                         letter.toUpperCase()
                       )}
