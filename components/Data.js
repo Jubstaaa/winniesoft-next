@@ -928,6 +928,93 @@ const cloneGames = [
     ],
     updated_on: "Sept 12, 2022",
   },
+  {
+    name: "cable-mania-clone",
+    display: "vertical",
+    product_info: {
+      title: "Cable Mania Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/CableMania",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "color-hoop-clone",
+    display: "vertical",
+    product_info: {
+      title: "Color Hoop Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/ColorHoopStack",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "draw-collect-clone",
+    display: "vertical",
+    product_info: {
+      title: "Draw and Collect Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/Draw-Collect",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
 ];
 
 const team = [
