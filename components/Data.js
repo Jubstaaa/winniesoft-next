@@ -1015,6 +1015,93 @@ const cloneGames = [
     ],
     updated_on: "Sept 12, 2022",
   },
+  {
+    name: "cut-the-rope",
+    display: "vertical",
+    product_info: {
+      title: "Cut The Rope Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/Cut_The_Rope",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "slam-dunk-clone",
+    display: "vertical",
+    product_info: {
+      title: "Slam Dunk Clone",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/SlamDunk",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with arrow keys.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
+  {
+    name: "slingshot-game",
+    display: "vertical",
+    product_info: {
+      title: "Slingshot Game",
+      authors: [
+        {
+          name: "BilgeKaanpc",
+          link: "https://github.com/BilgeKaanpc",
+        },
+      ],
+
+      thumbnail: cloneGameImage,
+      offers: [
+        {
+          link: "https://github.com/BilgeKaanpc/SlingshotMechanics",
+        },
+      ],
+    },
+    about_this_game: {
+      snippet: "You can play with mouse.",
+    },
+    categories: [
+      {
+        name: "Clone Game",
+      },
+    ],
+    updated_on: "Sept 12, 2022",
+  },
 ];
 
 const team = [
