@@ -598,6 +598,99 @@ const playApps = [
       },
     ],
   },
+  {
+    name: "road-clicker",
+    type: "Mobile Game / App",
+    search_metadata: {
+      id: "64808bbf2ff4212cfdaf9b59",
+      status: "Success",
+      json_endpoint:
+        "https://serpapi.com/searches/a54304e93122619b/64808bbf2ff4212cfdaf9b59.json",
+      created_at: "2023-06-07 13:53:03 UTC",
+      processed_at: "2023-06-07 13:53:03 UTC",
+      google_play_product_url:
+        "https://play.google.com/store/apps/details?id=com.WinnieSoft.RoadClicker&hl=en&gl=us",
+      raw_html_file:
+        "https://serpapi.com/searches/a54304e93122619b/64808bbf2ff4212cfdaf9b59.html",
+      total_time_taken: 1.33,
+    },
+    search_parameters: {
+      engine: "google_play_product",
+      product_id: "com.WinnieSoft.RoadClicker",
+      hl: "en",
+      gl: "us",
+      store: "apps",
+    },
+    product_info: {
+      title: "Road Clicker",
+      authors: [
+        {
+          name: "WinnieSoft",
+          link: "https://play.google.com/store/apps/dev?id=8459739707142059323",
+        },
+      ],
+      extensions: ["Contains ads"],
+      content_rating: {
+        text: "Everyone",
+        thumbnail:
+          "https://play-lh.googleusercontent.com/IciOnDFecb5Xt50Q2jlcNC0LPI7LEGxNojroo-s3AozcyS-vDCwtq4fn7u3wZmRna8OewG9PBrWC-i7i=w48-h16-rw",
+      },
+      downloads: "5+",
+      thumbnail:
+        "https://play-lh.googleusercontent.com/jiGkoqHsKw5hPBN3TyoeLsdDj7hQJ5Q_K8rzmdp_t8-l3bju7GMuGG3fk2yZN2mH9XY=w240-h480-rw",
+      offers: [
+        {
+          text: "Install",
+          link: "https://play.google.com/store/apps/details?id=com.WinnieSoft.RoadClicker&rdid=com.WinnieSoft.RoadClicker&feature=md&offerId",
+          ios: "https://apps.apple.com/tr/app/roadclicker/id6449903313?l",
+        },
+      ],
+    },
+    media: {
+      images: [
+        "https://play-lh.googleusercontent.com/jimbZeuYdcPcRkAQSW47AYRitNzxKbkPyevv0qvMb1OKzccRbgJCFeYbQqVGaM-SAGc=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/p4DpoiUdkDYe9TDd5lhp3xfDaMj7OW86cdm-n4802j59beEshSFTus3QUKw7I3bLKA=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/oHS8S4AFmY7P5Y0gX9lNyR0wZUwNcP1WanH1xBSbgiK2cEoz1tzxX85uogbi7gdt4w=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/U0fKxYAH28eplijwjzUycFEVv8lwYBEj1JAJE8-Vs_iYMnoPuSi1DZdTaReHs-J6Cg=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/sE_bg-sPAWwuTpl9o6opey_MOqV5Wh4o8PtyZS-Id4jDUPvVQKwwQBwavB2_KhioUtg=w526-h296-rw",
+      ],
+    },
+    about_this_game: {
+      snippet:
+        "Road Clicker is a free and fun clicker game that lets you speed up cars by clicking on them. This addictive game offers a fun experience.In the game, with each click, your cars speed up and you earn coins by passing through the gates. You can use the coins to increase your income, discover new models and access new maps.The fun clicker game is easy to learn thanks to its user-friendly interface and appeals to players of all ages. You can play anytime and anywhere on your mobile device.",
+    },
+    categories: [
+      {
+        name: "Casual",
+        link: "https://play.google.com/store/apps/category/GAME_CASUAL",
+        category_id: "GAME_CASUAL",
+        serpapi_link:
+          "https://serpapi.com/search.json?apps_category=GAME_CASUAL&engine=google_play&gl=us&hl=en&store=apps",
+      },
+    ],
+    updated_on: "Jun 6, 2023",
+    data_safety: [
+      {
+        text: "No data shared with third parties",
+        subtext: "Learn more about how developers declare sharing",
+        link: "https://support.google.com/googleplay?p=data-safety&hl=en",
+      },
+      {
+        text: "No data collected",
+        subtext: "Learn more about how developers declare collection",
+        link: "https://support.google.com/googleplay?p=data-safety&hl=en",
+      },
+    ],
+    what_s_new: {
+      snippet:
+        "We have included a tutorial to help you understand the game more easily.",
+    },
+    developer_contact: {
+      website: "https://www.winniesoft.com",
+      email: "info@winniesoft.com",
+      privacy_policy: "https://www.winniesoft.com/privacy-policy",
+    },
+  },
 ];
 const cloneGames = [
   {

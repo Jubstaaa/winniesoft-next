@@ -171,9 +171,20 @@ function Project(props) {
                             target="_blank"
                             rel="nofollow noreferrer"
                           >
-                            {" "}
-                            Link
+                            {project.type === "Mobile Game / App"
+                              ? "Google Play"
+                              : "Link"}
                           </a>
+                          {project.product_info.offers[0].ios && (
+                            <a
+                              href={project.product_info.offers[0].ios}
+                              target="_blank"
+                              rel="nofollow noreferrer"
+                              style={{ marginLeft: "10px" }}
+                            >
+                              App Store
+                            </a>
+                          )}
                         </li>
                       </ul>
                     </div>
